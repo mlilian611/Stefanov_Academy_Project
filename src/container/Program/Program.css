@@ -1,0 +1,222 @@
+.app__specialMenu-title {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.program_section {
+  background-image: url("/src/assets/rainbow.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 50px 0px 50px 0px;
+  background-color: rgb(240, 235, 243, 0.3);
+}
+
+.headtext__cormorant_program {
+  padding: 50px 0 50px 0;
+  background-color: rgb(240, 235, 243, 0.5);
+}
+
+.summer_program {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  background-color: rgb(240, 235, 243, 0.5);
+}
+
+.summer_program_text {
+  width: 50%;
+  height: 100%;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  font-size: 17px;
+  transition: opacity 3s ease-in-out;
+  word-spacing: 5px;
+  letter-spacing: 2px;
+}
+
+.fadeIn {
+  opacity: 1;
+}
+
+.headtext {
+  font-size: 70px;
+  word-spacing: 10px;
+  letter-spacing: 5px;
+}
+
+h1,
+p {
+  animation: fadeInAnimation ease 2.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+p {
+  margin-bottom: 30px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(141, 111, 111);
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.muzieknootjes {
+  display: block;
+  margin: auto;
+  position: relative;
+  width: 100%;
+  min-width: 300px;
+  height: 100px;
+  border: 0px solid #000;
+}
+
+.noot-1,
+.noot-2,
+.noot-3,
+.noot-4 {
+  position: absolute;
+  animation: notes 2s infinite linear;
+  font-size: 35px;
+  opacity: 0;
+}
+
+.noot-1 {
+  top: 90px;
+  left: 0;
+  animation-delay: 0.5s;
+}
+
+.noot-2 {
+  top: 30px;
+  left: 30%;
+  animation-delay: 1s;
+}
+
+.noot-3 {
+  top: 90px;
+  left: 60%;
+  animation-delay: 1.5s;
+}
+
+.noot-4 {
+  top: 40px;
+  left: 90%;
+  animation-delay: 2s;
+}
+
+@keyframes notes {
+  0% {
+    transform: scale(1) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.5) translate(50%, -50%);
+  }
+  80% {
+    opacity: 0;
+    transform: scale(1.5) translate(100%, -100%);
+  }
+  100% {
+    transform: scale(1.5) translate(100%, -100%);
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 2000px) {
+  .app__specialMenu-menu_img {
+    width: 650px;
+  }
+  .app__specialMenu-menu_img img {
+    height: 920px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .app__specialMenu-menu {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .app__specialMenu-menu_img {
+    margin: 3rem 0;
+  }
+}
+@media screen and (max-width: 650px) {
+  .summer_program {
+    width: 100%;
+  }
+  .muzieknootjes {
+    display: block;
+    margin: auto;
+    position: relative;
+    width: 100%;
+    min-width: 200px;
+    height: 100px;
+    border: 0px solid #000;
+  }
+
+  .noot-1,
+  .noot-2,
+  .noot-3,
+  .noot-4 {
+    position: absolute;
+    animation: notes 2s infinite linear;
+    font-size: 35px;
+    opacity: 0;
+  }
+  .noot-1 {
+    top: 90px;
+    left: 0;
+    animation-delay: 0.5s;
+  }
+
+  .noot-2 {
+    top: 30px;
+    left: 10%;
+    animation-delay: 1s;
+  }
+
+  .noot-3 {
+    top: 90px;
+    left: 60%;
+    animation-delay: 1.5s;
+  }
+
+  .noot-4 {
+    top: 40px;
+    left: 90%;
+    animation-delay: 2s;
+  }
+  .headtext {
+    width: 100%;
+    font-size: 34px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  .summer_program_text {
+    width: 90%;
+    height: 100%;
+    margin-bottom: 50px;
+    font-size: 17px;
+    padding: 10px;
+  }
+}

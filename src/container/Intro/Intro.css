@@ -1,0 +1,25 @@
+.app__video {
+  height: 100vh;
+  position: relative;
+}
+
+.app__video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.app__video-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.app__video-overlay_button {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 650px) {
+  .app__video {
+    height: 100%;
+  }
+}
