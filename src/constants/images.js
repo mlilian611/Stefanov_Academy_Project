@@ -24,6 +24,7 @@ import alek_canov from "../assets/alek_canov.jpg";
 import sofia_chernishkova from "../assets/sofia_chernishkova.jpg";
 import back_card from "../assets/back_card.png";
 import bg_3 from "../assets/bg_3.jpg";
+import bg_1 from "../assets/bg_1.png";
 import idk from "../assets/idk.png";
 import bg_10 from "../assets/bg_10.png";
 import musica_note from "../assets/musical_note.jpg";
@@ -56,6 +57,7 @@ export default {
   sofia_chernishkova,
   back_card,
   bg_3,
+  bg_1,
   idk,
   bg_10,
   musica_note,
