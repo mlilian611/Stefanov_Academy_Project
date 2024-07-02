@@ -29,6 +29,10 @@ import idk from "../assets/idk.png";
 import bg_10 from "../assets/bg_10.png";
 import musica_note from "../assets/musical_note.jpg";
 import rainbow from "../assets/rainbow.jpg";
+import pianoclass from "../assets/pianoclass.png";
+import violinclass from "../assets/violinclass.png";
+import ukeleleclass from "../assets/ukeleleclass.png";
+import cheloclass from "../assets/cheloclass.png";
 
 export default {
   chef,
@@ -62,4 +66,8 @@ export default {
   bg_10,
   musica_note,
   rainbow,
+  pianoclass,
+  violinclass,
+  ukeleleclass,
+  cheloclass,
 };

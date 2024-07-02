@@ -1,20 +1,14 @@
-.app__specialMenu-title {
-  margin-bottom: 2rem;
-  text-align: center;
-}
-
 .program_section {
   background-image: url("/src/assets/rainbow.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
   padding: 50px 0px 50px 0px;
   background-color: rgb(240, 235, 243, 0.3);
 }
 
 .headtext__cormorant_program {
-  padding: 50px 0 50px 0;
+  padding: 50px 0 1px 0;
   background-color: rgb(240, 235, 243, 0.5);
 }
 
@@ -28,13 +22,11 @@
 
 .summer_program_text {
   width: 50%;
-  height: 100%;
   border-radius: 10px;
-  margin-bottom: 50px;
-  font-size: 17px;
+  font-size: 24px;
   transition: opacity 3s ease-in-out;
   word-spacing: 5px;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
 }
 
 .fadeIn {
@@ -45,6 +37,18 @@
   font-size: 70px;
   word-spacing: 10px;
   letter-spacing: 5px;
+}
+
+.learn_more,
+.sign_up {
+  margin: 20px;
+  background-color: #8d6f6f;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 20%;
+  font-size: 20px;
 }
 
 h1,
@@ -157,6 +161,11 @@ body {
   .app__specialMenu-menu_img {
     margin: 3rem 0;
   }
+  .learn_more,
+  .sign_up {
+    width: 45%;
+    font-size: 20px;
+  }
 }
 @media screen and (max-width: 650px) {
   .summer_program {
@@ -218,5 +227,11 @@ body {
     margin-bottom: 50px;
     font-size: 17px;
     padding: 10px;
+  }
+  .learn_more,
+  .sign_up {
+    margin: 20px;
+    width: 45%;
+    font-size: 17px;
   }
 }

@@ -1,16 +1,14 @@
-import React, { useRef, useEffect, useState } from "react";
+import React from "react";
 import "./Program.css";
 
 const Program = () => {
-  const spanRef = useRef();
-
   return (
     <div className="program_section">
       <div className="headtext__cormorant_program">
-        <h1 className="headtext">Лятна Програма</h1>
+        <h1 className="headtext">Лятна Занималня</h1>
       </div>
       <div className="summer_program">
-        <span ref={spanRef} className="summer_program_text">
+        <span className="summer_program_text">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
             interdum cursus leo, ac rutrum enim vulputate sit amet. Praesent
@@ -29,7 +27,10 @@ const Program = () => {
             eget tellus quis, vulputate vehicula elit.
           </p>
 
-          <button>
+          <button className="learn_more">
+            <a href="#contact">Научи повече</a>
+          </button>
+          <button className="sign_up">
             <a href="#contact">Запиши се сега</a>
           </button>
           <div className="muzieknootjes">
