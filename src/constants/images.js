@@ -33,6 +33,11 @@ import pianoclass from "../assets/pianoclass.png";
 import violinclass from "../assets/violinclass.png";
 import ukeleleclass from "../assets/ukeleleclass.png";
 import cheloclass from "../assets/cheloclass.png";
+import stefanov_music_logo_new from "../assets/stefanov_music_logo_new.JPG";
+import music_divider from "../assets/music_divider.png";
+import news from "../assets/news.jpg";
+import news2 from "../assets/news2.jpg";
+import news3 from "../assets/news3.jpg";
 
 export default {
   chef,
@@ -70,4 +75,9 @@ export default {
   violinclass,
   ukeleleclass,
   cheloclass,
+  stefanov_music_logo_new,
+  music_divider,
+  news,
+  news2,
+  news3,
 };

@@ -8,7 +8,7 @@ body {
   background-repeat: no-repeat;
   background-color: rgb(240, 235, 243, 0.5);
   text-align: center;
-  margin-top: 2rem;
+
   overflow-x: hidden;
 }
 
@@ -26,13 +26,13 @@ body {
   letter-spacing: 5px;
   transition: opacity 3s ease-in-out;
   animation: slideInFromRight 7s ease-out;
+  margin-top: 4%;
 }
 
 .about_school_text {
   width: 50%;
   height: 100%;
   border-radius: 10px;
-  margin-bottom: 50px;
   font-size: 24px;
   word-spacing: 5px;
   letter-spacing: 2px;
@@ -91,6 +91,7 @@ body {
     animation: none;
     transition: opacity 3s ease-in-out;
     animation: slideInFromLeftMobile 7s ease-out;
+    font-size: 17px;
   }
 
   @keyframes slideInFromRightMobile {

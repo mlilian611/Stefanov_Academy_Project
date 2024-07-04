@@ -1,8 +1,68 @@
-/* .scholarship_section {
-  background-image: url("/src/assets/bg_1.png");
+.scholarship_section {
+  --bg-image: url("/src/assets/stefanov_music_logo_new.JPG");
+  --bg-color: rgba(240, 235, 243, 0.3);
+  --headtext-bg-color: #f0ebf3cc;
+  --text-color: #8d6f6f;
+  --button-bg-color: #8d6f6f;
+  --button-text-color: #ffffff;
+
+  background-image: var(--bg-image);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding: 50px 0px 50px 0px;
-  background-color: rgb(109, 36, 151, 0.5);
-} */
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 7% 0 0% 0;
+}
+
+.scholarship_section .headtext__cormorant_sholarship {
+  padding: 50px 0 1px 0;
+  background-color: var(--headtext-bg-color);
+}
+
+.scholarship_section .scholarship_text {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  background-color: var(--headtext-bg-color);
+}
+
+.scholarship_section .button {
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+}
+
+.scholarship_section .scholarship_text_span {
+  width: 50%;
+  border-radius: 10px;
+  font-size: 24px;
+  transition: opacity 3s ease-in-out;
+  word-spacing: 5px;
+  letter-spacing: 3px;
+}
+@media screen and (max-width: 2000px) {
+  .app__specialMenu-menu_img {
+    width: 650px;
+  }
+  .app__specialMenu-menu_img img {
+    height: 920px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .app__specialMenu-menu {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .app__specialMenu-menu_img {
+    margin: 3rem 0;
+  }
+}
+@media screen and (max-width: 650px) {
+  .scholarship_section .scholarship_text_span {
+    font-size: 17px;
+    width: 80%;
+  }
+}

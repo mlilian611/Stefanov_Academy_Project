@@ -1,8 +1,9 @@
 import React, { useRef } from "react";
 import "./AboutSchool.css";
+import MusicDivider from "../MusicDivider/MusicDivider";
+
 const AboutSchool = () => {
   const spanRef = useRef();
-
   return (
     <>
       <div>
@@ -30,7 +31,6 @@ const AboutSchool = () => {
                 Suspendisse lacus nibh, varius eget tellus quis, vulputate
                 vehicula elit.
               </p>
-
               <button>
                 <a href="about-us">Опознай ни</a>
               </button>
@@ -38,6 +38,7 @@ const AboutSchool = () => {
           </div>
         </div>
       </div>
+      <MusicDivider />
     </>
   );
 };

@@ -8,7 +8,8 @@ html {
 }
 
 .app__aboutus {
-  background: url("../../assets/bg_11.png") center/cover no-repeat fixed; /* Background properties */
+  background: url("../../assets/stefanov_music_logo_new.JPG") center/cover
+    no-repeat fixed; /* Background properties */
   padding-bottom: 3em;
   text-align: center;
   position: relative;
@@ -17,9 +18,11 @@ html {
 }
 
 .headtext__cormorant {
+  background: url("../../assets/stefanov_music_logo_new.JPG") center/cover
+    no-repeat fixed;
   font-family: "Bitter", serif;
   font-weight: lighter;
-  background-color: rgb(240, 235, 243);
+  background-color: rgb(163, 96, 202);
   color: #8d6f6f !important;
   text-align: center;
   display: flex;
@@ -300,7 +303,7 @@ button:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #8d6f6f;
+    color: rgb(141, 111, 111);
     text-align: center;
     width: 100%;
     line-height: 1.6;
@@ -310,7 +313,7 @@ button:hover {
   button {
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #8d6f6f;
+    background-color: rgb(141, 111, 111);
     color: #fff;
     border: none;
     border-radius: 4px;
