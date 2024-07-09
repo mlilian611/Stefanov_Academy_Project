@@ -7,7 +7,7 @@ const ProgramPage = () => {
     <div className="program_page_section">
       <div className="program_block">
         <div className="content_with_image">
-          <div className="summer_program_text">
+          <div className="program_text">
             <div className="headtext_cormorant_program">
               <h1 className="headtext">Следобедна Занималня</h1>
             </div>
@@ -51,7 +51,7 @@ const ProgramPage = () => {
             <img className="program_img3" src={images.program3} alt="" />
             <img className="program_img4" src={images.program4} alt="" />
           </div>
-          <div className="summer_program_text">
+          <div className="program_text">
             <div className="headtext_cormorant_program">
               <h1 className="headtext">Лятна Занималня</h1>
             </div>

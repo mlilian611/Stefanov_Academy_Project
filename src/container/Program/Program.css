@@ -216,7 +216,7 @@ p {
   }
   .headtext {
     width: 100%;
-    font-size: 34px;
+    font-size: 32px;
     text-align: center;
     justify-content: center;
     display: flex;
@@ -226,8 +226,9 @@ p {
     width: 90%;
     height: 100%;
     margin-bottom: 50px;
-    font-size: 17px;
+    font-size: 20px;
     padding: 10px;
+    line-height: 1.6rem;
   }
   .learn_more,
   .sign_up {

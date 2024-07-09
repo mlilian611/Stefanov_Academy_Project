@@ -102,13 +102,28 @@ const NewsSlider = () => {
           <div className="img_container">
             <img src={images.news2} alt="" />
             <div className="img_text_overlay">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-              interdum c
+              <h1 className="news_title_image">Lore ipsum</h1>
+              <h2 className="news_text">
+                Lorem isum dolor sit amet, consectetur adipiscing elit. Duis
+                interdum cursus leo, ac rutrum enim vulputate sit amet. Praesent
+                fringilla sem
+              </h2>
+              <h3 className="news_date">22.06.2023 </h3>
+              <button className="learn_more">Научи повече</button>
             </div>
           </div>
           <div className="img_container">
             <img src={images.news3} alt="" />
-            <div className="img_text_overlay">Text 3</div>
+            <div className="img_text_overlay">
+              <h1 className="news_title_image">Lore ipsum</h1>
+              <h2 className="news_text">
+                Lorem isum dolor sit amet, consectetur adipiscing elit. Duis
+                interdum cursus leo, ac rutrum enim vulputate sit amet. Praesent
+                fringilla sem
+              </h2>
+              <h3 className="news_date">22.06.2023 </h3>
+              <button className="learn_more">Научи повече</button>
+            </div>
           </div>
         </div>
         <div id="overlay">

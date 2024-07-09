@@ -24,6 +24,7 @@ body {
   font-size: 70px;
   word-spacing: 10px;
   letter-spacing: 5px;
+
   transition: opacity 3s ease-in-out;
   animation: slideInFromRight 7s ease-out;
   margin-top: 4%;
@@ -33,10 +34,10 @@ body {
   width: 50%;
   height: 100%;
   border-radius: 10px;
-  font-size: 24px;
+  font-size: 1.5rem;
   word-spacing: 5px;
   letter-spacing: 2px;
-  line-height: 1.5em;
+  line-height: 1.6em;
   transition: opacity 3s ease-in-out;
   animation: slideInFromLeft 7s ease-out;
 }
@@ -82,7 +83,8 @@ body {
 }
 @media screen and (max-width: 650px) {
   .headtext_about_school {
-    font-size: 36px;
+    width: 100%;
+    font-size: 32px;
     animation: none;
     transition: opacity 3s ease-in-out;
     animation: slideInFromRightMobile 7s ease-out;
@@ -92,7 +94,7 @@ body {
     animation: none;
     transition: opacity 3s ease-in-out;
     animation: slideInFromLeftMobile 7s ease-out;
-    font-size: 17px;
+    font-size: 20px;
   }
 
   @keyframes slideInFromRightMobile {

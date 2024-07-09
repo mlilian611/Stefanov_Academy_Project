@@ -27,7 +27,7 @@
   justify-content: center;
   display: flex;
   background-color: var(--headtext-bg-color);
-  line-height: 2rem;
+  line-height: 1.6rem;
 }
 
 .scholarship_section .button {

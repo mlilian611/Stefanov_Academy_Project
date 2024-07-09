@@ -35,7 +35,7 @@
 .img_container > img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Use 'cover' for better image scaling */
+  object-fit: cover;
 }
 .img_text_overlay {
   position: absolute;
@@ -58,7 +58,7 @@
 .img_text_overlay h2,
 .img_text_overlay h3,
 .img_text_overlay button {
-  margin-bottom: 10px; /* Adjust spacing between elements */
+  margin-bottom: 10px;
 }
 #overlay {
   position: absolute;
@@ -74,15 +74,22 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  width: 3%; /* Adjust button size */
-  height: 15%; /* Adjust button size */
+  width: 3%;
+  height: 15%;
   border-radius: 20%;
-  font-size: 2vw; /* Adjust font size */
+  font-size: 2vw;
   font-weight: bold;
   background-color: rgba(200, 200, 200, 0.2);
   color: rgb(185, 155, 155);
-  top: 40%; /* Adjust button position */
+  top: 40%;
   cursor: pointer;
+}
+.news_text {
+  width: 70%;
+  margin: 17px;
+  padding: 1em;
+  font-size: 35px;
+  font-weight: lighter;
 }
 
 #left_button {
@@ -95,7 +102,7 @@
 
 @media screen and (min-width: 330px) and (max-width: 900px) {
   .headtext_news {
-    font-size: 45px;
+    font-size: 47px;
     letter-spacing: 7px;
   }
 
@@ -107,5 +114,20 @@
     width: 5%;
     font-size: 7vw;
     font-weight: bolder;
+  }
+  .img_text_overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    font-size: 19px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  .news_text {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+    font-weight: lighter;
   }
 }
