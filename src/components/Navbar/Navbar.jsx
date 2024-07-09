@@ -19,9 +19,18 @@ const Navbar = () => {
           <Link to="/home">Начало</Link>
         </li>
         <li className="p__opensans">
-          <Link to="/about-us">За нас</Link>
+          <Link to="/ProgramPage">Занималня</Link>
         </li>
 
+        <li className="p__opensans">
+          <Link to="/home">Уроци</Link>
+        </li>
+        <li className="p__opensans">
+          <Link to="/home">Стипендии</Link>
+        </li>
+        <li className="p__opensans">
+          <Link to="/about-us">За нас</Link>
+        </li>
         <li className="p__opensans">
           <a href="#contact">Контакти</a>
         </li>
@@ -41,19 +50,40 @@ const Navbar = () => {
         {toggleMenu && (
           <div className="app__navbar-smallscreen_overlay flex__center slide-bottom">
             <MdOutlineRestaurantMenu
-              fontSize={27}
+              fontSize={29}
               className="overlay__close"
               onClick={() => setToggleMenu(false)}
             />
             <ul className="app__navbar-smallscreen_links">
               <li className="p__opensans">
-                <a href="home">Начало</a>
+                <a href="home" onClick={() => setToggleMenu(false)}>
+                  Начало
+                </a>
               </li>
               <li className="p__opensans">
-                <a href="about-us">За нас</a>
+                <Link to="/ProgramPage" onClick={() => setToggleMenu(false)}>
+                  Занималня
+                </Link>
               </li>
               <li className="p__opensans">
-                <a href="contact">Контакти</a>
+                <Link to="/Classes" onClick={() => setToggleMenu(false)}>
+                  Уроци
+                </Link>
+              </li>
+              <li className="p__opensans">
+                <Link to="/Scholarship" onClick={() => setToggleMenu(false)}>
+                  Стипендии
+                </Link>
+              </li>
+              <li className="p__opensans">
+                <a href="about-us" onClick={() => setToggleMenu(false)}>
+                  За нас
+                </a>
+              </li>
+              <li className="p__opensans">
+                <a href="contact" onClick={() => setToggleMenu(false)}>
+                  Контакти
+                </a>
               </li>
             </ul>
           </div>

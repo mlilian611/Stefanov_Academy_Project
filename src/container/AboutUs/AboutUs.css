@@ -9,27 +9,23 @@ html {
 
 .app__aboutus {
   background: url("../../assets/stefanov_music_logo_new.JPG") center/cover
-    no-repeat fixed; /* Background properties */
-  padding-bottom: 3em;
+    no-repeat fixed;
+
   text-align: center;
   position: relative;
   overflow: hidden;
   box-sizing: border-box;
 }
 
-.headtext__cormorant {
+.headtext__cormorant_about_us {
   background: url("../../assets/stefanov_music_logo_new.JPG") center/cover
-    no-repeat fixed;
-  font-family: "Bitter", serif;
+      no-repeat fixed,
+    rgba(240, 235, 243, 0.588);
+  background-blend-mode: hue; /* or use 'overlay' or 'darken' */
   font-weight: lighter;
-  background-color: rgb(163, 96, 202);
-  color: #8d6f6f !important;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  padding-top: 1em;
-  padding-bottom: 1em;
   letter-spacing: 0.3em;
+  padding: 150px 0 150px 170px;
+  font-size: 100px;
 }
 
 body.active-modal {
@@ -48,20 +44,35 @@ body.active-modal {
 
 .popup {
   display: flex;
-  flex-direction: column; /* Stacks items vertically */
-  justify-content: center; /* Centers items vertically */
-  align-items: center; /* Center items horizontally */
-  position: fixed; /* Position the modal relative to the viewport */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
-  max-width: 800px;
+  width: 80%;
+  max-width: 1400px;
+  max-height: 80%;
   padding: 20px;
   background-color: #fff;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
   z-index: 1000;
   border-radius: 30px;
+  overflow-y: auto;
+}
+.popup::-webkit-scrollbar {
+  width: 7px;
+}
+
+.popup::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 20px;
+}
+
+.popup::-webkit-scrollbar-thumb {
+  background: #8d6f6f;
+  border-radius: 10px;
 }
 
 .pop-up_image_background {
@@ -77,7 +88,7 @@ body.active-modal {
 }
 
 .pop-up_image {
-  width: 50%;
+  width: 30%;
   height: auto;
   margin-bottom: 1em;
 }
@@ -155,14 +166,16 @@ body.active-modal {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 170px;
+  gap: 200px;
+  padding-bottom: 20em;
+  background-color: rgba(240, 235, 243, 0.588);
 }
 
 .card {
   width: 600px;
   height: 600px;
   border: #f1f1f1 solid;
-  margin-bottom: 12em;
+  margin-bottom: 20em;
   position: relative;
   perspective: 1000px;
   box-sizing: border-box;
@@ -249,10 +262,6 @@ body.active-modal {
   letter-spacing: 11px;
 }
 
-p {
-  line-height: 1.5rem;
-}
-
 button {
   margin-top: 20px;
   padding: 10px 20px;
@@ -287,15 +296,20 @@ button:hover {
 }
 
 @media screen and (min-width: 330px) and (max-width: 900px) {
+  .headtext__cormorant_about_us {
+    letter-spacing: 0.2em;
+    padding: 150px 0 150px 0px;
+    font-size: 80px;
+  }
   .card {
-    width: 330px;
-    height: 330px;
+    width: 400px;
+    height: 400px;
   }
 
   .flip-card-front h2 {
     letter-spacing: 11px;
-    font-size: 20px;
-    line-height: 35px;
+    font-size: 30px;
+    line-height: 45px;
   }
 
   .flip-card-back p {
@@ -324,6 +338,7 @@ button:hover {
   }
 
   .card-grid {
+    width: 100%;
     gap: 10px;
   }
 

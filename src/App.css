@@ -147,7 +147,7 @@
 
 @media screen and (max-width: 650px) {
   .section__padding {
-    padding: 4rem 2rem;
+    padding: 0rem 0rem;
   }
 
   .p__cormorant {

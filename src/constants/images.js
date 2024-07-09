@@ -38,6 +38,10 @@ import music_divider from "../assets/music_divider.png";
 import news from "../assets/news.jpg";
 import news2 from "../assets/news2.jpg";
 import news3 from "../assets/news3.jpg";
+import program from "../assets/program.png";
+import program2 from "../assets/program2.png";
+import program3 from "../assets/program3.png";
+import program4 from "../assets/program4.png";
 
 export default {
   chef,
@@ -80,4 +84,8 @@ export default {
   news,
   news2,
   news3,
+  program,
+  program2,
+  program3,
+  program4,
 };
