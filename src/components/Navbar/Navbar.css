@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: black;
+  background: rgba(0, 0, 0, 0.952);
   padding: 1rem 2rem;
 }
 

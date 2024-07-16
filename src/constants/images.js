@@ -42,6 +42,14 @@ import program from "../assets/program.png";
 import program2 from "../assets/program2.png";
 import program3 from "../assets/program3.png";
 import program4 from "../assets/program4.png";
+import PianoClasses from "../assets/PianoClasses.png";
+import ViolinClasses from "../assets/ViolinClasses.png";
+import UkuleleClasses from "../assets/UkuleleClasses.png";
+import CelloClasses from "../assets/CelloClasses.png";
+import piano_classes_boy_playing from "../assets/piano_classes_boy_playing.png";
+import piano_classes_girl_playing from "../assets/piano_classes_girl_playing.png";
+import violin_classes_girl_playing from "../assets/violin_classes_girl_playing.png";
+import cello_classes_girl_playing from "../assets/cello_classes_girl_playing.png";
 
 export default {
   chef,
@@ -88,4 +96,12 @@ export default {
   program2,
   program3,
   program4,
+  PianoClasses,
+  ViolinClasses,
+  UkuleleClasses,
+  CelloClasses,
+  piano_classes_boy_playing,
+  piano_classes_girl_playing,
+  cello_classes_girl_playing,
+  violin_classes_girl_playing,
 };

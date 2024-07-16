@@ -23,16 +23,16 @@ const Navbar = () => {
         </li>
 
         <li className="p__opensans">
-          <Link to="/home">Уроци</Link>
+          <Link to="/ClassesPage">Уроци</Link>
         </li>
         <li className="p__opensans">
-          <Link to="/home">Стипендии</Link>
+          <Link to="/Scholarship">Стипендии</Link>
         </li>
         <li className="p__opensans">
           <Link to="/about-us">За нас</Link>
         </li>
         <li className="p__opensans">
-          <a href="#contact">Контакти</a>
+          <a href="/contact">Контакти</a>
         </li>
       </ul>
       <div className="app__navbar-login">
