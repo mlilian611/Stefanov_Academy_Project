@@ -1,8 +1,8 @@
 :root {
   --bg-image: url("/src/assets/rainbow.jpg");
   --bg-color: #f0ebf34d;
-  --headtext-bg-color: rgba(240, 235, 243, 0.5);
-  --text-color: rgb(141, 111, 111);
+  --headtext-bg-color: #f0ebf380;
+  --text-color: white;
   --button-bg-color: #8d6f6f;
   --button-text-color: #ffffff;
 }
@@ -27,6 +27,7 @@ body {
 .headtext__cormorant_program {
   padding: 50px 0 1px 0;
   background-color: var(--headtext-bg-color);
+  color: var(--text-color);
 }
 
 .summer_program {
@@ -44,6 +45,7 @@ body {
   transition: opacity 3s ease-in-out;
   word-spacing: 5px;
   letter-spacing: 3px;
+  color: var(--text-color);
 }
 
 .fadeIn {
@@ -59,7 +61,7 @@ body {
 .learn_more,
 .sign_up {
   margin: 20px;
-  background-color: var(--button-bg-color);
+  background-color: #eeb8c8;
   color: var(--button-text-color);
   border: none;
   border-radius: 4px;

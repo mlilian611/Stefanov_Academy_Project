@@ -38,7 +38,7 @@ const Classes = () => {
             className="classes_button"
             onClick={() => handleClick("ukulele")}
           >
-            <img src={images.ukeleleclass} alt="ukeleleclass" />
+            <img src={images.ukuleleclass} alt="ukeleleclass" />
           </button>
           <h2>Укулеле</h2>
         </div>

@@ -10,6 +10,7 @@ import Homepage from "./container/Homepage/Homepage";
 import AboutUs from "./container/AboutUs/AboutUs";
 import ProgramPage from "./container/ProgramPage.jsx/ProgramPage";
 import ClassesPage from "./container/ClassesPage/ClassesPage";
+import ScholarshipPage from "./container/ShcolarshipPage/ScholarshipPage";
 import { Navbar } from "./components";
 import { Footer } from "./container";
 import "./App.css";
@@ -24,6 +25,7 @@ const App = () => (
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/programpage" element={<ProgramPage />} />
         <Route path="/classespage" element={<ClassesPage />} />
+        <Route path="/scholarshippage" element={<ScholarshipPage />} />
       </Routes>
       <Footer />
     </div>

@@ -49,11 +49,11 @@
 .quote {
   font-style: italic;
   font-size: 25px;
-  color: rgb(141, 111, 111);
+  color: #d1b0cd;
 }
 
 .quoted {
-  color: rgb(141, 111, 111);
+  color: #d1b0cd;
   font-size: 25px;
 }
 

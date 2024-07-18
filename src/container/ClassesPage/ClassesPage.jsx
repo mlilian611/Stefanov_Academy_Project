@@ -10,13 +10,19 @@ const ClassesPage = () => {
   const ukuleleRef = useRef(null);
   const celloRef = useRef(null);
   const location = useLocation();
-  //   const [audio] = useState(new Audio(Beethoven_Sonata_op_13));
-  //   const [isPlaying, setIsPlaying] = useState(false);
+  const [isUserInteracted, setIsUserInteracted] = useState(false);
 
   const audioPiano = new Audio(Beethoven_Sonata_op_13);
   const audioViolin = new Audio(violin_classes);
 
   useEffect(() => {
+    const handleUserInteraction = () => {
+      setIsUserInteracted(true);
+      document.removeEventListener("click", handleUserInteraction);
+      document.removeEventListener("keydown", handleUserInteraction);
+    };
+    document.addEventListener("click", handleUserInteraction);
+    document.addEventListener("keydown", handleUserInteraction);
     if (location.hash) {
       const id = location.hash.substring(1);
       const element = {
@@ -37,7 +43,6 @@ const ClassesPage = () => {
       const card = event.currentTarget.closest(".flip_card");
       card.classList.add("hover");
       audio.play();
-      // setIsPlaying(true);
     };
   };
 
@@ -47,7 +52,6 @@ const ClassesPage = () => {
       card.classList.remove("hover");
       audio.pause();
       audio.currentTime = 0;
-      // setIsPlaying(false);
     };
   };
 
@@ -64,24 +68,6 @@ const ClassesPage = () => {
     <div className="classes_page_section">
       <div id="piano" ref={pianoRef} className="classes_block">
         <div className="content">
-          <div className="classes_text">
-            <div className="headtext_cormorant_classes">
-              <h1 className="headtext">Уроци по пиано</h1>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-              interdum cursus leo, ac rutrum enim vulputate sit amet. Praesent
-              fringilla sem diam, eget scelerisque quam vehicula sit amet. Nulla
-              nec erat eu diam tempor cursus. Donec tincidunt lobortis felis, in
-              mattis urna efficitur at. Morbi congue, lorem et condimentum
-              sollicitudin, massa augue malesuada velit, ut fringilla nisi massa
-              a erat. Nam nisi ex, tincidunt sit amet pharetra sit amet,
-              pellentesque ac diam.
-            </p>
-            <button className="sign_up_program">
-              <a href="#contact">Запиши се сега</a>
-            </button>
-          </div>
           <div className="flip_card">
             <div className="flip_card_inner">
               <div className="flip_card_front">
@@ -104,14 +90,11 @@ const ClassesPage = () => {
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div id="violin" ref={violinRef} className="classes_block">
-        <div className="content">
           <div className="classes_text">
             <div className="headtext_cormorant_classes">
-              <h1 className="headtext">Уроци по цигулка</h1>
+              <h1 className="headtext">Уроци по пиано</h1>
             </div>
+
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
               interdum cursus leo, ac rutrum enim vulputate sit amet. Praesent
@@ -126,6 +109,10 @@ const ClassesPage = () => {
               <a href="#contact">Запиши се сега</a>
             </button>
           </div>
+        </div>
+      </div>
+      <div id="violin" ref={violinRef} className="classes_block">
+        <div className="content">
           <div className="flip_card">
             <div className="flip_card_inner">
               <div className="flip_card_front">
@@ -148,13 +135,9 @@ const ClassesPage = () => {
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div id="ukulele" ref={ukuleleRef} className="classes_block">
-        <div className="content">
           <div className="classes_text">
             <div className="headtext_cormorant_classes">
-              <h1 className="headtext">Уроци по укулеле</h1>
+              <h1 className="headtext">Уроци по цигулка</h1>
             </div>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
@@ -170,6 +153,10 @@ const ClassesPage = () => {
               <a href="#contact">Запиши се сега</a>
             </button>
           </div>
+        </div>
+      </div>
+      <div id="ukulele" ref={ukuleleRef} className="classes_block">
+        <div className="content">
           <div className="flip_card">
             <div className="flip_card_inner">
               <div className="flip_card_front">
@@ -192,13 +179,9 @@ const ClassesPage = () => {
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div id="cello" ref={celloRef} className="classes_block">
-        <div className="content">
           <div className="classes_text">
             <div className="headtext_cormorant_classes">
-              <h1 className="headtext">Уроци по виолончело</h1>
+              <h1 className="headtext">Уроци по укулеле</h1>
             </div>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
@@ -214,6 +197,10 @@ const ClassesPage = () => {
               <a href="#contact">Запиши се сега</a>
             </button>
           </div>
+        </div>
+      </div>
+      <div id="cello" ref={celloRef} className="classes_block">
+        <div className="content">
           <div className="flip_card">
             <div className="flip_card_inner">
               <div className="flip_card_front">
@@ -235,6 +222,24 @@ const ClassesPage = () => {
                 />
               </div>
             </div>
+          </div>
+          <div className="classes_text">
+            <div className="headtext_cormorant_classes">
+              <h1 className="headtext">Уроци по виолончело</h1>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+              interdum cursus leo, ac rutrum enim vulputate sit amet. Praesent
+              fringilla sem diam, eget scelerisque quam vehicula sit amet. Nulla
+              nec erat eu diam tempor cursus. Donec tincidunt lobortis felis, in
+              mattis urna efficitur at. Morbi congue, lorem et condimentum
+              sollicitudin, massa augue malesuada velit, ut fringilla nisi massa
+              a erat. Nam nisi ex, tincidunt sit amet pharetra sit amet,
+              pellentesque ac diam.
+            </p>
+            <button className="sign_up_program">
+              <a href="#contact">Запиши се сега</a>
+            </button>
           </div>
         </div>
       </div>

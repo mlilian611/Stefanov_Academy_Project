@@ -23,7 +23,11 @@ import borislav_benchev from "../assets/borislav_benchev.jpg";
 import alek_canov from "../assets/alek_canov.jpg";
 import sofia_chernishkova from "../assets/sofia_chernishkova.jpg";
 import back_card from "../assets/back_card.png";
+import bg_12 from "../assets/bg_12.png";
+import bg_13 from "../assets/bg_13.png";
+import bg_14 from "../assets/bg_14.png";
 import bg_3 from "../assets/bg_3.jpg";
+import bg_2 from "../assets/bg_2.png";
 import bg_1 from "../assets/bg_1.png";
 import idk from "../assets/idk.png";
 import bg_10 from "../assets/bg_10.png";
@@ -31,7 +35,7 @@ import musica_note from "../assets/musical_note.jpg";
 import rainbow from "../assets/rainbow.jpg";
 import pianoclass from "../assets/pianoclass.png";
 import violinclass from "../assets/violinclass.png";
-import ukeleleclass from "../assets/ukeleleclass.png";
+import ukuleleclass from "../assets/ukuleleclass.png";
 import cheloclass from "../assets/cheloclass.png";
 import stefanov_music_logo_new from "../assets/stefanov_music_logo_new.JPG";
 import music_divider from "../assets/music_divider.png";
@@ -85,7 +89,7 @@ export default {
   rainbow,
   pianoclass,
   violinclass,
-  ukeleleclass,
+  ukuleleclass,
   cheloclass,
   stefanov_music_logo_new,
   music_divider,
@@ -104,4 +108,8 @@ export default {
   piano_classes_girl_playing,
   cello_classes_girl_playing,
   violin_classes_girl_playing,
+  bg_2,
+  bg_12,
+  bg_13,
+  bg_14,
 };

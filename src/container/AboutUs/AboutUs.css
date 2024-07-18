@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Bitter:ital@0;1&display=swap");
-
 body,
 html {
   margin: 0;
@@ -7,25 +6,28 @@ html {
   overflow-x: hidden; /* Prevents horizontal scroll */
 }
 
-.app__aboutus {
-  background: url("../../assets/stefanov_music_logo_new.JPG") center/cover
-    no-repeat fixed;
-
+.app__about_us {
+  background: url("../../assets/bg_14.png") center/cover no-repeat fixed;
+  background-color: #e2c2c2;
   text-align: center;
   position: relative;
   overflow: hidden;
   box-sizing: border-box;
 }
+.card-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 200px;
+  padding-bottom: 20em;
+}
 
-.headtext__cormorant_about_us {
-  background: url("../../assets/stefanov_music_logo_new.JPG") center/cover
-      no-repeat fixed,
-    rgba(240, 235, 243, 0.588);
-  background-blend-mode: hue; /* or use 'overlay' or 'darken' */
+.headtext_cormorant_about_us {
   font-weight: lighter;
   letter-spacing: 0.3em;
   padding: 150px 0 150px 170px;
   font-size: 100px;
+  color: #a8a5c8;
 }
 
 body.active-modal {
@@ -71,7 +73,7 @@ body.active-modal {
 }
 
 .popup::-webkit-scrollbar-thumb {
-  background: #8d6f6f;
+  background: #a8a5c8;
   border-radius: 10px;
 }
 
@@ -108,7 +110,7 @@ body.active-modal {
 
 .pop-up_close_button {
   padding: 10px 20px;
-  background-color: #8d6f6f;
+  background-color: #a8a5c8;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -137,7 +139,7 @@ body.active-modal {
 
 .popup button {
   padding: 10px 20px;
-  background-color: #8d6f6f;
+  background-color: #a8a5c8;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -160,15 +162,6 @@ body.active-modal {
   to {
     opacity: 0;
   }
-}
-
-.card-grid {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 200px;
-  padding-bottom: 20em;
-  background-color: rgba(240, 235, 243, 0.588);
 }
 
 .card {
@@ -219,7 +212,7 @@ body.active-modal {
 }
 
 .flip-card-front h2 {
-  color: #8d6f6f;
+  color: #a8a5c8;
   font-size: 36px;
   word-spacing: 1px;
   letter-spacing: 11px;
@@ -248,7 +241,7 @@ body.active-modal {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #8d6f6f;
+  color: #a8a5c8;
   text-align: center;
   width: 90%;
   line-height: 1.8;
@@ -256,7 +249,7 @@ body.active-modal {
 }
 
 .flip-card-back h2 {
-  color: #8d6f6f !important;
+  color: #a8a5c8 !important;
   font-size: 36px;
   word-spacing: 1px;
   letter-spacing: 11px;
@@ -265,7 +258,7 @@ body.active-modal {
 button {
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: #8d6f6f;
+  background-color: #a8a5c8;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -296,10 +289,10 @@ button:hover {
 }
 
 @media screen and (min-width: 330px) and (max-width: 900px) {
-  .headtext__cormorant_about_us {
+  .headtext_cormorant_about_us {
     letter-spacing: 0.2em;
     padding: 150px 0 150px 0px;
-    font-size: 80px;
+    font-size: 70px;
   }
   .card {
     width: 400px;
@@ -317,7 +310,7 @@ button:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: rgb(141, 111, 111);
+
     text-align: center;
     width: 100%;
     line-height: 1.6;
@@ -325,14 +318,7 @@ button:hover {
   }
 
   button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: rgb(141, 111, 111);
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    width: 40%;
+    width: 50%;
     font-size: 16px;
     letter-spacing: 2px;
   }

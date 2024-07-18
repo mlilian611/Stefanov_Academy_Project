@@ -1,8 +1,8 @@
 .scholarship_section {
-  --bg-image: url("/src/assets/stefanov_music_logo_new.JPG");
+  --bg-image: url("/src/assets/back_card.png");
   --bg-color: rgba(240, 235, 243, 0.3);
-  --headtext-bg-color: #f0ebf3cc;
-  --text-color: #8d6f6f;
+  --headtext-bg-color: #a293a8a6;
+  --text-color: #ffffff;
   --button-bg-color: #8d6f6f;
   --button-text-color: #ffffff;
 

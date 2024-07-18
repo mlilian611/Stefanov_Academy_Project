@@ -26,7 +26,7 @@ const Navbar = () => {
           <Link to="/ClassesPage">Уроци</Link>
         </li>
         <li className="p__opensans">
-          <Link to="/Scholarship">Стипендии</Link>
+          <Link to="/ScholarshipPage">Стипендии</Link>
         </li>
         <li className="p__opensans">
           <Link to="/about-us">За нас</Link>

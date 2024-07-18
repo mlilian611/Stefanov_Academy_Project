@@ -31,8 +31,8 @@ const AboutSchool = () => {
                 Suspendisse lacus nibh, varius eget tellus quis, vulputate
                 vehicula elit.
               </p>
-              <button>
-                <a href="about-us">Опознай ни</a>
+              <button className="button_about_school">
+                <a href="/about-us">Опознай ни</a>
               </button>
             </span>
           </div>

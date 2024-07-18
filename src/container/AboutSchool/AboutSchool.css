@@ -2,7 +2,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: rgb(141, 111, 111);
+  color: #d1b0cd;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -17,6 +17,10 @@ body {
   text-align: center;
   justify-content: center;
   display: flex;
+}
+
+.button_about_school {
+  background-color: #d1b0cd;
 }
 
 .headtext_about_school {

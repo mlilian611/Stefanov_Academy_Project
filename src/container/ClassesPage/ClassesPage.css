@@ -1,5 +1,5 @@
 .classes_page_section {
-  background-image: url("/src/assets/bg_1.png");
+  background-image: url("/src/assets/rainbow.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -7,7 +7,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #855454;
+  color: #ffffff;
+  padding: 5rem 0 5rem 0;
 }
 html {
   scroll-behavior: smooth;
@@ -18,12 +19,13 @@ html {
   justify-content: center;
   align-items: center;
   padding-bottom: 6rem;
-  background-color: #ebd9f58f;
+  margin-bottom: 2rem;
+  background-color: var(--headtext-bg-color);
 }
 .flip_card {
   width: 200px;
   height: 500px;
-  margin: 10em 22em 2em 2em;
+  margin: 10em 26em 2em 2em;
   transform-style: preserve-3d;
 }
 
@@ -48,9 +50,13 @@ html {
 .flip_card_back {
   transform: rotateY(180deg);
 }
-.classes_img,
+.classes_img {
+  width: 560px;
+  height: 500px;
+}
+
 .classes_img1 {
-  width: 500px;
+  width: 450px;
   height: 500px;
 }
 .classes_img1 {
@@ -64,4 +70,30 @@ html {
 }
 .headtext_cormorant_classes {
   margin-top: 2em;
+}
+@media screen and (min-width: 330px) and (max-width: 900px) {
+  .content {
+    flex-direction: column;
+  }
+  .flip_card {
+    width: 200px;
+    height: 400px;
+    margin: 5em 5em 0em 0em;
+  }
+
+  .classes_text {
+    font-size: 1.4em;
+    text-wrap: wrap;
+    width: 100%;
+    line-height: 2em;
+  }
+  .headtext_cormorant_classes {
+    margin-top: 0em;
+    line-height: 3em;
+  }
+  .classes_img,
+  .classes_img1 {
+    width: 300px;
+    height: 300px;
+  }
 }
