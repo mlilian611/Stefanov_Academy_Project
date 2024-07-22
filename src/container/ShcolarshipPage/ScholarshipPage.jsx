@@ -5,10 +5,10 @@ import { images } from "../../constants";
 const ScholarshipPage = () => {
   return (
     <div>
-      <div className="scholarship_page_section">
-        <div className="scholarship_block">
-          <div className="scholarship_text">
-            <div className="headtext_cormorant_scholarship">
+      <div className="scholarship__section">
+        <div className="scholarship__block">
+          <div className="scholarship__text">
+            <div className="headtext__cormorant__scholarship">
               <h1 className="headtext">Стипендии</h1>
             </div>
             <p>

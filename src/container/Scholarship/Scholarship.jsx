@@ -27,7 +27,7 @@ const Scholarship = () => {
             eget tellus quis, vulputate vehicula elit.
           </p>
           <button className="learn_more">
-            <a href="#contact">Научи повече</a>
+            <a href="/ScholarshipPage">Научи повече</a>
           </button>
         </span>
       </div>
