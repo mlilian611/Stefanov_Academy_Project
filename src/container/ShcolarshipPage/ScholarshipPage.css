@@ -35,7 +35,6 @@
 @media screen and (max-width: 650px) {
   .headtext_cormorant_scholarship {
     text-align: center;
-    font-size: 24px;
   }
   .scholarship__block {
     display: flex;
@@ -44,8 +43,9 @@
   }
   .scholarship__text {
     margin: 4em 0em 10em 0em;
-    padding: 0em 1em 1em 1em;
+    padding: 0em 0em 1em 0em;
     width: 100%;
+    font-size: 21px;
   }
   .sign_up_scholarship {
     width: 80%;

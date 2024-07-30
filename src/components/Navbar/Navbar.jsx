@@ -12,27 +12,26 @@ const Navbar = () => {
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
-        <img src={images.gericht} alt="app logo" />
+        <img src={images.stefanov} alt="app logo" />
       </div>
       <ul className="app__navbar-links">
         <li className="p__opensans">
           <Link to="/home">Начало</Link>
         </li>
         <li className="p__opensans">
-          <Link to="/ProgramPage">Занималня</Link>
-        </li>
-
-        <li className="p__opensans">
-          <Link to="/ClassesPage">Уроци</Link>
+          <Link to="/programpage">Занималня</Link>
         </li>
         <li className="p__opensans">
-          <Link to="/ScholarshipPage">Стипендии</Link>
+          <Link to="/classespage">Уроци</Link>
+        </li>
+        <li className="p__opensans">
+          <Link to="/scholarshippage">Стипендии</Link>
         </li>
         <li className="p__opensans">
           <Link to="/about-us">За нас</Link>
         </li>
         <li className="p__opensans">
-          <a href="/contact">Контакти</a>
+          <Link to="/contact">Контакти</Link>
         </li>
       </ul>
       <div className="app__navbar-login">
@@ -56,34 +55,37 @@ const Navbar = () => {
             />
             <ul className="app__navbar-smallscreen_links">
               <li className="p__opensans">
-                <a href="home" onClick={() => setToggleMenu(false)}>
+                <Link to="/home" onClick={() => setToggleMenu(false)}>
                   Начало
-                </a>
+                </Link>
               </li>
               <li className="p__opensans">
-                <Link to="/ProgramPage" onClick={() => setToggleMenu(false)}>
+                <Link to="/programpage" onClick={() => setToggleMenu(false)}>
                   Занималня
                 </Link>
               </li>
               <li className="p__opensans">
-                <Link to="/Classes" onClick={() => setToggleMenu(false)}>
+                <Link to="/classespage" onClick={() => setToggleMenu(false)}>
                   Уроци
                 </Link>
               </li>
               <li className="p__opensans">
-                <Link to="/Scholarship" onClick={() => setToggleMenu(false)}>
+                <Link
+                  to="/scholarshippage"
+                  onClick={() => setToggleMenu(false)}
+                >
                   Стипендии
                 </Link>
               </li>
               <li className="p__opensans">
-                <a href="about-us" onClick={() => setToggleMenu(false)}>
+                <Link to="/about-us" onClick={() => setToggleMenu(false)}>
                   За нас
-                </a>
+                </Link>
               </li>
               <li className="p__opensans">
-                <a href="contact" onClick={() => setToggleMenu(false)}>
+                <Link to="/contact" onClick={() => setToggleMenu(false)}>
                   Контакти
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

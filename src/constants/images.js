@@ -1,6 +1,8 @@
 import spoon from "../assets/spoon.png";
 import findus from "../assets/findus.png";
+import stefanov from "../assets/stefanov.png";
 import stefanov_music_logo from "../assets/stefanov_music_logo.JPG";
+import stefanov_music_logo_1 from "../assets/stefanov_music_logo_1.JPG";
 import stefanov_banner from "../assets/stefanov_banner.png";
 import gabriela_stefanova from "../assets/gabriela_stefanova.jpg";
 import debora_stefanova from "../assets/debora_stefanova.jpg";
@@ -40,8 +42,10 @@ import violin_classes_girl_playing from "../assets/violin_classes_girl_playing.p
 import cello_classes_girl_playing from "../assets/cello_classes_girl_playing.png";
 
 export default {
+  stefanov_music_logo_1,
   spoon,
   findus,
+  stefanov,
   stefanov_music_logo,
   stefanov_banner,
   gabriela_stefanova,
