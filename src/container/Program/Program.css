@@ -1,7 +1,7 @@
 :root {
   --bg-image: url("/src/assets/rainbow.jpg");
   --bg-color: #f0ebf34d;
-  --headtext-bg-color: #f0ebf380;
+  --headtext-bg-color: #e2d0ec98;
   --text-color: white;
   --button-bg-color: #8d6f6f;
   --button-text-color: #ffffff;
@@ -52,10 +52,13 @@ body {
   opacity: 1;
 }
 
-.headtext {
-  font-size: 70px;
-  word-spacing: 10px;
-  letter-spacing: 5px;
+.headtext_program {
+  width: 100%;
+  font-size: 3em;
+  margin-bottom: 2%;
+  text-align: center;
+  justify-content: center;
+  display: flex;
 }
 
 .learn_more,
@@ -216,9 +219,9 @@ p {
     left: 90%;
     animation-delay: 2s;
   }
-  .headtext {
+  .headtext_program {
     width: 100%;
-    font-size: 32px;
+    font-size: 3em;
     text-align: center;
     justify-content: center;
     display: flex;
@@ -235,7 +238,7 @@ p {
   .learn_more,
   .sign_up {
     margin: 20px;
-    width: 45%;
+    width: 65%;
     font-size: 17px;
   }
 }

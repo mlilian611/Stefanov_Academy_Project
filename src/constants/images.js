@@ -1,6 +1,7 @@
 import spoon from "../assets/spoon.png";
 import findus from "../assets/findus.png";
 import stefanov from "../assets/stefanov.png";
+import thumbnail from "../assets/thumbnail.png";
 import stefanov_music_logo from "../assets/stefanov_music_logo.JPG";
 import stefanov_music_logo_1 from "../assets/stefanov_music_logo_1.JPG";
 import stefanov_banner from "../assets/stefanov_banner.png";
@@ -43,6 +44,7 @@ import cello_classes_girl_playing from "../assets/cello_classes_girl_playing.png
 
 export default {
   stefanov_music_logo_1,
+  thumbnail,
   spoon,
   findus,
   stefanov,

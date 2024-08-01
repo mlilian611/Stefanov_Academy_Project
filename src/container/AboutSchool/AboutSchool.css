@@ -88,8 +88,10 @@ body {
 @media screen and (max-width: 650px) {
   .headtext_about_school {
     width: 100%;
-    font-size: 32px;
+    font-size: 3em;
     animation: none;
+    letter-spacing: 10px;
+    line-height: 1.3em;
     transition: opacity 3s ease-in-out;
     animation: slideInFromRightMobile 7s ease-out;
   }

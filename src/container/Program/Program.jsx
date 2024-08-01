@@ -1,11 +1,12 @@
 import React from "react";
 import "./Program.css";
+import { Link } from "react-router-dom";
 
 const Program = () => {
   return (
     <div className="program_section">
       <div className="headtext__cormorant_program">
-        <h1 className="headtext">Лятна Занималня</h1>
+        <h1 className="headtext_program">Лятна Занималня</h1>
       </div>
       <div className="summer_program">
         <span className="summer_program_text">
@@ -28,10 +29,10 @@ const Program = () => {
           </p>
 
           <button className="learn_more">
-            <a href="#contact">Научи повече</a>
+            <Link to="/programpage">Занималня</Link>
           </button>
           <button className="sign_up">
-            <a href="#contact">Запиши се сега</a>
+            <Link to="/contact">Запиши се сега</Link>
           </button>
           <div className="muzieknootjes">
             <div className="noot-1">&#9835; &#9833;</div>

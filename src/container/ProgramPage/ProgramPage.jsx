@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./ProgramPage.css";
 import images from "../../constants/images";
 
 const ProgramPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="program_page_section">
       <div className="program_block">

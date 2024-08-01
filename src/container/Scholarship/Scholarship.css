@@ -1,7 +1,7 @@
 .scholarship_section {
   --bg-image: url("/src/assets/back_card.png");
   --bg-color: rgba(240, 235, 243, 0.3);
-  --headtext-bg-color: #a293a88f;
+  --headtext-bg-color: #a293a89c;
   --text-color: #ffffff;
   --button-bg-color: #8d6f6f;
   --button-text-color: #ffffff;
@@ -14,6 +14,11 @@
   background-color: var(--bg-color);
   color: var(--text-color);
   margin: 7% 0 0% 0;
+}
+.headtext_scholarship {
+  margin-bottom: 2%;
+  font-size: 3em;
+  letter-spacing: 10px;
 }
 
 .scholarship_section .headtext__cormorant_sholarship {
@@ -60,10 +65,13 @@
   .app__specialMenu-menu_img {
     margin: 3rem 0;
   }
+  .headtext_scholarship {
+    margin-bottom: 5%;
+  }
 }
 @media screen and (max-width: 650px) {
   .scholarship_section .scholarship_text_span {
-    font-size: 17px;
+    font-size: 19px;
     width: 80%;
   }
 }

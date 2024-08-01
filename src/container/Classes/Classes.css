@@ -1,5 +1,11 @@
-.headtext {
+.headtext_classes {
+  width: 100%;
+  font-size: 3em;
   margin-bottom: 2%;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  letter-spacing: 10px;
 }
 
 .classes_button {
@@ -72,7 +78,7 @@ h2 {
   h2 {
     font-size: 26px;
   }
-  .headtext {
-    font-size: 40px;
+  .headtext_classes {
+    font-size: 3em;
   }
 }

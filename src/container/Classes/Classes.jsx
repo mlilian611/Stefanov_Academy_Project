@@ -12,7 +12,7 @@ const Classes = () => {
   return (
     <div className="classes_section">
       <div className="headtext__cormorant_classes">
-        <h1 className="headtext">Уроци</h1>
+        <h1 className="headtext_classes">Уроци</h1>
       </div>
       <div className="classes">
         <div className="classes_item click-btn">

@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "./Contact.css";
 import MyMap from "../Map/Map";
@@ -22,6 +22,10 @@ const Contact = () => {
         }
       );
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="contact__section_page">
