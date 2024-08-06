@@ -1,6 +1,6 @@
-.headtext_classes {
+.headtext_classes_first_page {
   width: 100%;
-  font-size: 3em;
+  font-size: 70px;
   margin-bottom: 2%;
   text-align: center;
   justify-content: center;
@@ -78,7 +78,7 @@ h2 {
   h2 {
     font-size: 26px;
   }
-  .headtext_classes {
+  .headtext_classes_first_page {
     font-size: 3em;
   }
 }

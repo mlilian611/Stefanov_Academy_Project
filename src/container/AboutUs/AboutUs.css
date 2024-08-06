@@ -27,7 +27,7 @@ html {
   letter-spacing: 0.3em;
   padding: 150px 0 150px 170px;
   font-size: 100px;
-  color: #a8a5c8;
+  color: #997597;
 }
 
 body.active-modal {
@@ -194,7 +194,7 @@ body.active-modal {
 }
 
 .flip-card-front h2 {
-  color: #a8a5c8;
+  color: #997597;
   font-size: 36px;
   word-spacing: 1px;
   letter-spacing: 11px;
@@ -223,7 +223,7 @@ body.active-modal {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #a8a5c8;
+  color: #997597;
   text-align: center;
   width: 90%;
   line-height: 1.8;
@@ -231,7 +231,7 @@ body.active-modal {
 }
 
 .flip-card-back h2 {
-  color: #a8a5c8 !important;
+  color: #997597 !important;
   font-size: 36px;
   word-spacing: 1px;
   letter-spacing: 11px;
@@ -240,7 +240,7 @@ body.active-modal {
 button {
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: #a8a5c8;
+  background-color: #997597;
   color: #fff;
   border: none;
   border-radius: 4px;

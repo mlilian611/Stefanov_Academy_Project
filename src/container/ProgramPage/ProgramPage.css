@@ -22,13 +22,20 @@
   padding: 50px 0 1px 0;
 }
 
-.headtext {
+.subtext_program {
   font-family: "Cormorant", serif;
   font-size: 3.5rem;
   background-color: none;
 }
+.headtext_program {
+  margin-bottom: 1em;
+  font-size: 6.5em;
+  background-color: #e1d4e6b9;
+  padding: 60px;
+  letter-spacing: 15px;
+}
 
-.content_with_image {
+.content_with_image_program {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -37,7 +44,7 @@
 }
 
 .program_text {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   line-height: 1.6;
 }
 
@@ -110,11 +117,11 @@
   font-size: 20px;
 }
 @media screen and (max-width: 650px) {
-  .content_with_image {
+  .content_with_image_program {
     background-color: rgba(240, 235, 243, 0.753);
   }
 
-  .content_with_image {
+  .content_with_image_program {
     flex-direction: column;
     align-items: center;
   }
@@ -141,9 +148,17 @@
     line-height: 1.6;
   }
 
-  .headtext {
+  .headtext_program {
+    font-size: 3em;
     margin-bottom: 1em;
     text-align: center;
+    background-color: #e1d4e6b9;
+    padding: 30px;
+    letter-spacing: 5px;
+  }
+  .subtext_program {
+    font-size: 2.5rem;
+    margin-bottom: 1em;
   }
 
   .sign_up_program {

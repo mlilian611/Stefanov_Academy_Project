@@ -5,7 +5,7 @@ const Scholarship = () => {
   return (
     <div className="scholarship_section">
       <div className="headtext__cormorant_sholarship">
-        <h1 className="headtext_scholarship">Стипендии</h1>
+        <h1 className="headtext_scholarship_first_page">Стипендии</h1>
       </div>
       <div className="scholarship_text">
         <span className="scholarship_text_span">

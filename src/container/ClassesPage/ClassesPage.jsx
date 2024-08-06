@@ -92,6 +92,9 @@ const ClassesPage = () => {
   return (
     <div className="classes_page_section">
       <div id="piano" ref={pianoRef} className="classes_block">
+        <div className="headtext_cormorant_program">
+          <h1 className="headtext_program">Уроци</h1>
+        </div>
         <div className="content">
           <div className="flip_card">
             <div className="flip_card_inner">
@@ -127,7 +130,7 @@ const ClassesPage = () => {
           </div>
           <div className="classes_text">
             <div className="headtext_cormorant_classes">
-              <h1 className="headtext">Уроци по пиано</h1>
+              <h1 className="subtext_program">Уроци по пиано</h1>
             </div>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
@@ -140,7 +143,7 @@ const ClassesPage = () => {
               pellentesque ac diam.
             </p>
             <button className="sign_up_program">
-              <a href="#contact">Запиши се сега</a>
+              <a href="/Contact">Запиши се сега</a>
             </button>
           </div>
         </div>
@@ -181,7 +184,7 @@ const ClassesPage = () => {
           </div>
           <div className="classes_text">
             <div className="headtext_cormorant_classes">
-              <h1 className="headtext">Уроци по цигулка</h1>
+              <h1 className="subtext_program">Уроци по цигулка</h1>
             </div>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
@@ -194,7 +197,7 @@ const ClassesPage = () => {
               pellentesque ac diam.
             </p>
             <button className="sign_up_program">
-              <a href="#contact">Запиши се сега</a>
+              <a href="/Contact">Запиши се сега</a>
             </button>
           </div>
         </div>
@@ -227,7 +230,7 @@ const ClassesPage = () => {
           </div>
           <div className="classes_text">
             <div className="headtext_cormorant_classes">
-              <h1 className="headtext">Уроци по укулеле</h1>
+              <h1 className="subtext_program">Уроци по укулеле</h1>
             </div>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
@@ -240,7 +243,7 @@ const ClassesPage = () => {
               pellentesque ac diam.
             </p>
             <button className="sign_up_program">
-              <a href="#contact">Запиши се сега</a>
+              <a href="/Contact">Запиши се сега</a>
             </button>
           </div>
         </div>
@@ -273,7 +276,7 @@ const ClassesPage = () => {
           </div>
           <div className="classes_text">
             <div className="headtext_cormorant_classes">
-              <h1 className="headtext">Уроци по виолончело</h1>
+              <h1 className="subtext_program">Уроци по виолончело</h1>
             </div>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
@@ -286,7 +289,7 @@ const ClassesPage = () => {
               pellentesque ac diam.
             </p>
             <button className="sign_up_program">
-              <a href="#contact">Запиши се сега</a>
+              <a href="/Contact">Запиши се сега</a>
             </button>
           </div>
         </div>

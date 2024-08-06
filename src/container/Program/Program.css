@@ -52,9 +52,10 @@ body {
   opacity: 1;
 }
 
-.headtext_program {
+.headtext_program_first_page {
   width: 100%;
-  font-size: 3em;
+  font-size: 70px;
+  letter-spacing: 7px;
   margin-bottom: 2%;
   text-align: center;
   justify-content: center;
@@ -219,7 +220,7 @@ p {
     left: 90%;
     animation-delay: 2s;
   }
-  .headtext_program {
+  .headtext_program_first_page {
     width: 100%;
     font-size: 3em;
     text-align: center;

@@ -17,46 +17,45 @@
   width: 100%;
 }
 .contact__block {
-  padding-bottom: 22em;
   border-radius: 8px;
-  padding: 20px;
+  padding: 10px;
+  width: 45%;
 }
-.headtext_cormorant_contact {
+.headtext__cormorant__contact {
   text-align: center;
-  padding: 50px 0 0px 0;
+  padding: 0px 0px 0px 0;
+  margin-bottom: 2em;
 }
 .contact__text {
-  margin: 0 0 0 1em;
+  margin: 1em 0 1em -4em;
   padding: 0 2em;
   width: 80%;
   font-size: 1.7rem;
   line-height: 2.5em;
 }
 .contact_section {
-  margin: 5em 0em 0em 13em;
-  padding: 0em 7em 0em 7em;
+  margin: 2em 0em 0em 0em;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
-  gap: 10em;
 }
 
 .form {
   display: flex;
   flex-direction: column;
-  padding: 1em 1em 1em 1em;
-  margin: 2em 1em 1em 1em;
+  justify-content: center;
+  align-items: center;
 }
 
 .form label {
   font-size: 1.8em;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 }
 .form input,
 .form textarea {
-  padding: 10px;
-  margin-bottom: 30px;
+  padding: 12px;
+  margin-bottom: 40px;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
@@ -71,8 +70,13 @@
 }
 
 .form input[type="text"],
-.form input[type="email"] {
+.form input[type="email"],
+.form textarea {
   height: 100px;
+  color: #d1b0cd;
+  font-size: 24px;
+  width: 140%;
+  border: 1px solid #d1b0cd;
 }
 
 .form input[type="submit"] {
@@ -83,6 +87,7 @@
   transition: background-color 0.3s ease;
   font-size: 1.2em;
   padding: 15px 0;
+  width: 140%;
 }
 .map_container {
   display: flex;
@@ -99,11 +104,17 @@
     width: 100%;
     box-sizing: border-box;
   }
+  .contact__block {
+    border-radius: 8px;
+    padding: 0px;
+    width: 95%;
+  }
 
   .contact__text {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     line-height: 1.8em;
-    padding: 0 1em 0 1em;
+    padding: 2em 0em 0 0em;
+    margin: 0em 1em 0em 0em;
     width: 100%;
     text-align: center;
     box-sizing: border-box;
@@ -120,7 +131,7 @@
   }
 
   .form {
-    width: 100%;
+    width: 90%;
     max-width: 100%;
     margin: 0;
     box-sizing: border-box;
@@ -148,7 +159,9 @@
 
   .form input[type="text"],
   .form input[type="email"] {
-    height: 50px;
+    height: 80px;
+    font-size: 16px;
+    width: 100%;
   }
 
   .form input[type="submit"] {
@@ -159,7 +172,7 @@
   }
 
   .map_container {
-    margin-top: 1em;
+    margin-top: 0em;
     box-sizing: border-box;
   }
 }

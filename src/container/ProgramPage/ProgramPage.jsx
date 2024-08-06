@@ -9,10 +9,13 @@ const ProgramPage = () => {
   return (
     <div className="program_page_section">
       <div className="program_block">
-        <div className="content_with_image">
+        <div className="headtext_cormorant_program">
+          <h1 className="headtext_program">Занималня</h1>
+        </div>
+        <div className="content_with_image_program">
           <div className="program_text">
             <div className="headtext_cormorant_program">
-              <h1 className="headtext">Следобедна Занималня</h1>
+              <h1 className="subtext_program">Следобедна Занималня</h1>
             </div>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
@@ -32,7 +35,7 @@ const ProgramPage = () => {
               eget tellus quis, vulputate vehicula elit.
             </p>
             <button className="sign_up_program">
-              <a href="#contact">Запиши се сега</a>
+              <a href="/Contact">Запиши се сега</a>
             </button>
           </div>
           <div className="program_images">
@@ -49,14 +52,14 @@ const ProgramPage = () => {
       </div>
 
       <div className="program_block">
-        <div className="content_with_image">
+        <div className="content_with_image_program">
           <div className="program_images">
             <img className="program_img3" src={images.program3} alt="" />
             <img className="program_img4" src={images.program4} alt="" />
           </div>
           <div className="program_text">
             <div className="headtext_cormorant_program">
-              <h1 className="headtext">Лятна Занималня</h1>
+              <h1 className="subtext_program">Лятна Занималня</h1>
             </div>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
@@ -76,7 +79,7 @@ const ProgramPage = () => {
               eget tellus quis, vulputate vehicula elit.
             </p>
             <button className="sign_up_program">
-              <a href="#contact">Запиши се сега</a>
+              <a href="/Contact">Запиши се сега</a>
             </button>
           </div>
         </div>

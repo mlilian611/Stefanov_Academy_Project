@@ -1,6 +1,6 @@
-.headtext_news {
+.headtext_news_first_page {
   margin-bottom: 2%;
-  font-size: 3em;
+  font-size: 70px;
   letter-spacing: 10px;
 }
 
@@ -102,8 +102,8 @@
 }
 
 @media screen and (min-width: 330px) and (max-width: 900px) {
-  .headtext_news {
-    font-size: 47px;
+  .headtext_news_first_page {
+    font-size: 3em;
     letter-spacing: 7px;
   }
 

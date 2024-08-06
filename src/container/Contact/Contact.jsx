@@ -31,15 +31,6 @@ const Contact = () => {
     <div className="contact__section_page">
       <div className="contact__container">
         <div className="contact_section">
-          <form className="form" ref={form} onSubmit={sendEmail}>
-            <label>Name</label>
-            <input className="name" type="text" name="user_name" />
-            <label>Email</label>
-            <input className="email" type="email" name="user_email" />
-            <label>Message</label>
-            <textarea name="message" />
-            <input className="message" type="submit" value="Send" />
-          </form>
           <div className="contact__block">
             <div className="contact__text">
               <div className="headtext__cormorant__contact">
@@ -54,6 +45,15 @@ const Contact = () => {
               </p>
             </div>
           </div>
+          <form className="form" ref={form} onSubmit={sendEmail}>
+            <label>Име</label>
+            <input className="name" type="text" name="user_name" />
+            <label>Имейл</label>
+            <input className="email" type="email" name="user_email" />
+            <label>Съобщение</label>
+            <textarea name="message" />
+            <input className="message" type="submit" value="Send" />
+          </form>
         </div>
         <div className="map_container">
           <MyMap />

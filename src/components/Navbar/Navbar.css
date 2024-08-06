@@ -88,7 +88,7 @@
 }
 
 .app__navbar-smallscreen_links li {
-  margin: 2rem;
+  margin: 3rem;
   cursor: pointer;
   color: var(--color-golden);
   font-size: 2rem;

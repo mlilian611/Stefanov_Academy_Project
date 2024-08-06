@@ -9,7 +9,7 @@ const News = () => {
       <MusicDivider />
       <div className="news_wrapper">
         <div className="headtext__cormorant_news">
-          <h1 className="headtext_news">Събития</h1>
+          <h1 className="headtext_news_first_page">Събития</h1>
         </div>
 
         <div className="news_section">

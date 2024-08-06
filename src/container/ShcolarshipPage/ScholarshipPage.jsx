@@ -8,8 +8,8 @@ const ScholarshipPage = () => {
       <div className="scholarship__section">
         <div className="scholarship__block">
           <div className="scholarship__text">
-            <div className="headtext__cormorant__scholarship">
-              <h1 className="headtext">Стипендии</h1>
+            <div className="headtext_cormorant_scholarship">
+              <h1 className="headtext_scholarship">Стипендии</h1>
             </div>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
@@ -29,7 +29,7 @@ const ScholarshipPage = () => {
               eget tellus quis, vulputate vehicula elit.
             </p>
             <button className="sign_up_scholarship">
-              <a href="#contact">Пиши ни за повече информация</a>
+              <a href="/Contact">Пиши ни за повече информация</a>
             </button>
           </div>
         </div>

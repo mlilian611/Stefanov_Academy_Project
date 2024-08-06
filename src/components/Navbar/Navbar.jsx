@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { MdOutlineRestaurantMenu } from "react-icons/md";
+import { FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 import images from "../../constants/images";
@@ -28,6 +28,9 @@ const Navbar = () => {
           <Link to="/scholarshippage">Стипендии</Link>
         </li>
         <li className="p__opensans">
+          <Link to="/newspage">Събития</Link>
+        </li>
+        <li className="p__opensans">
           <Link to="/about-us">За нас</Link>
         </li>
         <li className="p__opensans">
@@ -48,7 +51,7 @@ const Navbar = () => {
 
         {toggleMenu && (
           <div className="app__navbar-smallscreen_overlay flex__center slide-bottom">
-            <MdOutlineRestaurantMenu
+            <FaTimes
               fontSize={29}
               className="overlay__close"
               onClick={() => setToggleMenu(false)}
@@ -69,12 +72,18 @@ const Navbar = () => {
                   Уроци
                 </Link>
               </li>
+
               <li className="p__opensans">
                 <Link
                   to="/scholarshippage"
                   onClick={() => setToggleMenu(false)}
                 >
                   Стипендии
+                </Link>
+              </li>
+              <li className="p__opensans">
+                <Link to="/newspage" onClick={() => setToggleMenu(false)}>
+                  Събития
                 </Link>
               </li>
               <li className="p__opensans">
