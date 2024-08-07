@@ -22,7 +22,7 @@ const NewsPage = () => {
           </div>
           <div className="news_text">
             <div className="headtext_cormorant_news">
-              <h1 className="headtext">Събитие 1</h1>
+              <h1 className="subtext_program">Събитие 1</h1>
             </div>
 
             <p>
@@ -47,7 +47,7 @@ const NewsPage = () => {
           </div>
           <div className="news_text">
             <div className="headtext_cormorant_news">
-              <h1 className="headtext">Събитие 2</h1>
+              <h1 className="subtext_program">Събитие 2</h1>
             </div>
 
             <p>
@@ -74,7 +74,7 @@ const NewsPage = () => {
           </div>
           <div className="news_text">
             <div className="headtext_cormorant_news">
-              <h1 className="headtext">Събитие 3</h1>
+              <h1 className="subtext_program">Събитие 3</h1>
             </div>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
@@ -100,7 +100,7 @@ const NewsPage = () => {
           </div>
           <div className="news_text">
             <div className="headtext_cormorant_news">
-              <h1 className="headtext">Събитие 4</h1>
+              <h1 className="subtext_program">Събитие 4</h1>
             </div>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis

@@ -62,3 +62,20 @@
   flex: 2;
   margin-left: 0;
 }
+
+@media screen and (max-width: 650px) {
+  .headtext_news {
+    font-size: 3em;
+    background-color: #e1d4e6b9;
+    padding: 30px;
+    letter-spacing: 15px;
+  }
+  .news_img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+  }
+  .content_with_image {
+    flex-direction: column;
+  }
+}
