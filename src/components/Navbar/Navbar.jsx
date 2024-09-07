@@ -2,13 +2,22 @@ import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
-
 import images from "../../constants/images";
-
 import "./Navbar.css";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
+  const [showDropdown, setShowDropdown] = useState(false);
+
+  // Combined hover for both the parent and submenu
+  const handleMouseEnter = () => {
+    setShowDropdown(true);
+  };
+
+  const handleMouseLeave = () => {
+    setShowDropdown(false);
+  };
+
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
@@ -23,8 +32,25 @@ const Navbar = () => {
         <li className="p__opensans">
           <Link to="/programpage">Занималня</Link>
         </li>
-        <li className="p__opensans">
+        <li
+          className="p__opensans app__navbar-dropdown-container"
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
           <Link to="/classespage">Уроци</Link>
+          {/* Dropdown Menu */}
+          <ul
+            className="app__navbar-dropdown"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
+            <li className="p__opensans">
+              <Link to="/classespage">Музикални Уроци</Link>
+            </li>
+            <li className="p__opensans">
+              <Link to="/classespage/language-classes">Eзикови Уроци</Link>
+            </li>
+          </ul>
         </li>
         <li className="p__opensans">
           <Link to="/scholarshippage">Стипендии</Link>
@@ -73,8 +99,17 @@ const Navbar = () => {
                 <Link to="/classespage" onClick={() => setToggleMenu(false)}>
                   Уроци
                 </Link>
+                <ul className="app__navbar-smallscreen_dropdown">
+                  <li className="p__opensans">
+                    <Link to="/classespage/music-classes">Музикални Уроци</Link>
+                  </li>
+                  <li className="p__opensans">
+                    <Link to="/classespage/language-classes">
+                      Язикови Уроци
+                    </Link>
+                  </li>
+                </ul>
               </li>
-
               <li className="p__opensans">
                 <Link
                   to="/scholarshippage"

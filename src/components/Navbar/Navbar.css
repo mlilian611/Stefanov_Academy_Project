@@ -108,6 +108,51 @@
   color: var(--color- white);
 }
 
+.app__navbar-dropdown-container {
+  position: relative;
+}
+
+.app__navbar-dropdown {
+  position: absolute;
+  top: 130%;
+  left: 0;
+  background-color: #000;
+  border: 1px solid #ccc;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+}
+
+.app__navbar-dropdown-container:hover .app__navbar-dropdown,
+.app__navbar-dropdown:hover {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.app__navbar-dropdown-container:hover .app__navbar-dropdown {
+  top: 135%;
+}
+
+.app__navbar-dropdown li {
+  padding: 10px;
+  white-space: nowrap;
+}
+
+.app__navbar-dropdown li:hover {
+  background-color: #333;
+}
+
+.app__navbar-dropdown a {
+  color: #fff;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 2000px) {
   .app__navbar-logo img {
     width: 210px;

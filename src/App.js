@@ -10,6 +10,7 @@ import Homepage from "./container/Homepage/Homepage";
 import AboutUs from "./container/AboutUs/AboutUs";
 import ProgramPage from "./container/ProgramPage/ProgramPage";
 import ClassesPage from "./container/ClassesPage/ClassesPage";
+import Langclasses from "./container/LangClasses/Langclasses";
 import NewsPage from "./container/NewsPage/NewsPage";
 import ScholarshipPage from "./container/ShcolarshipPage/ScholarshipPage";
 import Contact from "./container/Contact/Contact";
@@ -27,6 +28,7 @@ const App = () => (
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/programpage" element={<ProgramPage />} />
         <Route path="/classespage" element={<ClassesPage />} />
+        <Route path="/classespage/langclasses" element={<Langclasses />} />
         <Route path="/scholarshippage" element={<ScholarshipPage />} />
         <Route path="/newspage" element={<NewsPage />} />
         <Route path="/contact" element={<Contact />} />
