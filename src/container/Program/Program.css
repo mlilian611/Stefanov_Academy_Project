@@ -1,5 +1,5 @@
 :root {
-  --bg-image: url("/src/assets/rainbow.jpg");
+  --bg-image: url("/src/assets/rainbow.png");
   --bg-color: #f0ebf34d;
   --headtext-bg-color: #e2d0ec98;
   --text-color: white;
@@ -240,6 +240,75 @@ p {
   .sign_up {
     margin: 20px;
     width: 65%;
+    font-size: 17px;
+  }
+}
+@media only screen and (max-height: 568px) and (orientation: landscape) {
+  .summer_program {
+    width: 100%;
+  }
+  .muzieknootjes {
+    display: block;
+    margin: auto;
+    position: relative;
+    width: 100%;
+    min-width: 200px;
+    height: 100px;
+    border: 0px solid #000;
+  }
+
+  .noot-1,
+  .noot-2,
+  .noot-3,
+  .noot-4 {
+    position: absolute;
+    animation: notes 2s infinite linear;
+    font-size: 35px;
+    opacity: 0;
+  }
+  .noot-1 {
+    top: 90px;
+    left: 0;
+    animation-delay: 0.5s;
+  }
+
+  .noot-2 {
+    top: 30px;
+    left: 10%;
+    animation-delay: 1s;
+  }
+
+  .noot-3 {
+    top: 90px;
+    left: 60%;
+    animation-delay: 1.5s;
+  }
+
+  .noot-4 {
+    top: 40px;
+    left: 90%;
+    animation-delay: 2s;
+  }
+  .headtext_program_first_page {
+    width: 100%;
+    font-size: 3em;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  .summer_program_text {
+    width: 90%;
+    height: 100%;
+    margin-bottom: 50px;
+    font-size: 20px;
+    padding: 10px;
+    line-height: 1.6rem;
+  }
+  .learn_more,
+  .sign_up {
+    margin: 20px;
+    width: 45%;
     font-size: 17px;
   }
 }

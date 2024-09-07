@@ -9,30 +9,26 @@ const AboutSchool = () => {
       <div>
         <div>
           <div className="headtext__cormorant_about_school">
-            <h1 className="headtext_about_school title">Академия Стефанов</h1>
+            <h1 className="headtext_about_school title">
+              Музикална школа Stefanov Music House
+            </h1>
           </div>
           <div className="about_school">
             <span ref={spanRef} className="about_school_text">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                interdum cursus leo, ac rutrum enim vulputate sit amet. Praesent
-                fringilla sem diam, eget scelerisque quam vehicula sit amet.
-                Nulla nec erat eu diam tempor cursus. Donec tincidunt lobortis
-                felis, in mattis urna efficitur at. Morbi congue, lorem et
-                condimentum sollicitudin, massa augue malesuada velit, ut
-                fringilla nisi massa a erat. Nam nisi ex, tincidunt sit amet
-                pharetra sit amet, pellentesque ac diam. Phasellus pretium ut
-                justo eget congue. Praesent vitae ornare lectus. Nunc non orci
-                at tortor pretium ullamcorper. Cras porttitor eget nisl ut
-                consequat. Ut nunc enim, posuere id mollis eget, pharetra vitae
-                massa. Nunc leo odio, porttitor in convallis nec, finibus
-                vehicula libero. Praesent sagittis posuere mauris, ut porta arcu
-                imperdiet nec. Curabitur vestibulum pellentesque lobortis.
-                Suspendisse lacus nibh, varius eget tellus quis, vulputate
-                vehicula elit.
+                Stefanov Music House е музикална школа създадена млади, изявени
+                професионалисти, готови да предадат нататък своите знания и
+                любов към музиката. Името Стефанов носи патронът, бащата,
+                вдъхновението и тласъка на цялата институция. Запазвайки
+                семейната идилия и интимност основна цел на нашия екип е да
+                направи достъпни всички ползи от изучаването на музикалната
+                материя - интелектуални, физически и душевни. При нас може да се
+                изучават пиано, цигулка, виолончело, укулеле, солфеж и теория на
+                музиката, английски и италиански език. Предлагаме също и учебна
+                занималня.
               </p>
               <button className="button_about_school">
-                <a href="/about-us">Опознай ни</a>
+                <a href="/about-us">Преподаватели</a>
               </button>
             </span>
           </div>

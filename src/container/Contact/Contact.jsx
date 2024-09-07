@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "./Contact.css";
 import MyMap from "../Map/Map";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
   const form = useRef();
@@ -37,11 +38,11 @@ const Contact = () => {
                 <h1 className="headtext">Контакти</h1>
               </div>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                interdum cursus leo, ac rutrum enim vulputate sit amet. Praesent
-                fringilla sem diam, eget scelerisque quam vehicula sit amet.
-                Nulla nec erat eu diam tempor cursus. Donec tincidunt lobortis
-                felis, in mattis urna efficitur at.
+                Останете ни Вашето запитване и контакт за обратна връзка и ние
+                ще се свържем с Вас! Може и да ни потърсите на
+                <a href="tel:++359894301301"></a>+359894301301 или{" "}
+                <a href="mailto: stefanovmusichouse@gmail.com"></a>
+                stefanovmusichouse@gmail.com
               </p>
             </div>
           </div>

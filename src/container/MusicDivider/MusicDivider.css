@@ -10,3 +10,9 @@
     margin-right: 50px;
   }
 }
+@media only screen and (max-height: 568px) and (orientation: landscape) {
+  .music_divider {
+    width: 100%;
+    margin-right: 50px;
+  }
+}

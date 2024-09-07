@@ -19,7 +19,7 @@ html {
   justify-content: center;
   flex-wrap: wrap;
   gap: 200px;
-  padding-bottom: 20em;
+  padding-bottom: 10em;
 }
 
 .headtext_cormorant_about_us {
@@ -78,15 +78,14 @@ body.active-modal {
 }
 
 .pop-up_image_background {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  border-radius: 5%;
-  opacity: 0.2;
-  position: absolute;
+  position: absolute; /* Ensure it’s positioned correctly */
   top: 0;
   left: 0;
-  z-index: -1;
 }
 
 .pop-up_image {
@@ -99,13 +98,15 @@ body.active-modal {
   font-size: 40px;
   letter-spacing: 15px;
   margin-bottom: 1em;
+  color: #997597;
 }
 
 .pop-up_content {
   text-align: center;
   line-height: 2;
-  font-size: 21px;
+  font-size: 22px;
   width: 100%;
+  color: #997597;
 }
 
 .pop-up_close_button {
@@ -154,11 +155,12 @@ body.active-modal {
   position: relative;
   perspective: 1000px;
   box-sizing: border-box;
+  border-radius: 16px;
 }
 
 .card img {
   padding: 1em;
-  width: 100%;
+
   box-sizing: border-box;
 }
 
@@ -184,13 +186,22 @@ body.active-modal {
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
+.flip-card-front {
+  border-radius: 16px;
+}
+
+.flip-card-front img {
+  object-fit: cover;
+  border-radius: 16px;
+  padding: 0;
+}
 
 .flip-card-front,
 .flip-card-back {
   position: absolute;
+  backface-visibility: hidden;
   width: 100%;
   height: 100%;
-  backface-visibility: hidden;
 }
 
 .flip-card-front h2 {
@@ -207,17 +218,24 @@ body.active-modal {
 }
 
 .flip-card-back img {
-  width: 100%;
-  height: 100%;
   object-fit: cover;
   opacity: 0.2;
 }
-
 .flip-card img {
   width: 100%;
   height: auto;
 }
 
+.flip-card-back-violin img {
+  position: relative;
+  width: 600px;
+  height: 600px;
+}
+.flip-card-back-chello img {
+  position: relative;
+  width: 610px;
+  height: 610px;
+}
 .flip-card-back p {
   position: fixed;
   top: 50%;
@@ -292,11 +310,107 @@ button:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
     text-align: center;
     width: 100%;
+    padding: 13px;
     line-height: 1.6;
     font-size: 18px;
+  }
+  .flip-card-back-violin img {
+    position: relative;
+    width: 400px;
+    height: 400px;
+  }
+  .flip-card-back-chello img {
+    position: relative;
+    width: 410px;
+    height: 410px;
+  }
+
+  button {
+    width: 50%;
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+
+  .card-grid {
+    width: 100%;
+    gap: 10px;
+  }
+
+  .popup {
+    width: 90%;
+    max-width: 90%;
+    max-height: 80%;
+    overflow-y: auto;
+  }
+
+  .pop-up_image_background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5%;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  .pop-up_image {
+    width: 70%;
+  }
+
+  .pop-up_title {
+    font-size: 25px;
+    letter-spacing: 15px;
+    margin-bottom: 1em;
+  }
+
+  .pop-up_content {
+    text-align: center;
+    line-height: 1.6;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-height: 568px) and (orientation: landscape) {
+  .headtext_cormorant_about_us {
+    letter-spacing: 0.2em;
+    padding: 150px 0 150px 0px;
+    font-size: 70px;
+  }
+  .card {
+    width: 400px;
+    height: 400px;
+  }
+
+  .flip-card-front h2 {
+    letter-spacing: 11px;
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  .flip-card-back p {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    padding: 13px;
+    line-height: 1.6;
+    font-size: 18px;
+  }
+  .flip-card-back-violin img {
+    position: relative;
+    width: 400px;
+    height: 400px;
+  }
+  .flip-card-back-chello img {
+    position: relative;
+    width: 410px;
+    height: 410px;
   }
 
   button {

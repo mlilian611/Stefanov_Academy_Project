@@ -1,5 +1,5 @@
 .scholarship__section {
-  background: url("../../assets/bg_13.png") center/cover no-repeat fixed;
+  background: url("../../assets/solfej_bg.png") center/cover no-repeat fixed;
   width: 100%;
   height: 100%;
 }
@@ -28,7 +28,7 @@
   line-height: 2.5em;
   border: 4px solid rgb(209, 184, 203);
   border-radius: 14px;
-  background-color: rgba(252, 252, 252, 0.548);
+  background-color: rgba(252, 252, 252, 0.904);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(3.4px);
 }
@@ -56,6 +56,31 @@
     padding: 0em 0em 1em 0em;
     width: 98%;
     font-size: 17px;
+  }
+  .sign_up_scholarship {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-height: 568px) and (orientation: landscape) {
+  .headtext_cormorant_scholarship {
+    text-align: center;
+  }
+  .headtext_scholarship {
+    font-size: 3em;
+    padding: 35px;
+    letter-spacing: 13px;
+  }
+  .scholarship__block {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .scholarship__text {
+    margin: 4em 0em 10em 0em;
+    padding: 0em 0em 1em 0em;
+    width: 98%;
+    font-size: 18px;
   }
   .sign_up_scholarship {
     width: 80%;

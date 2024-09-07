@@ -102,6 +102,51 @@ body {
     animation: slideInFromLeftMobile 7s ease-out;
     font-size: 20px;
   }
+  .button_about_school {
+    width: 70%;
+  }
+
+  @keyframes slideInFromRightMobile {
+    0% {
+      transform: translateX(1%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slideInFromLeftMobile {
+    0% {
+      transform: translateX(-1%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+}
+@media only screen and (max-height: 568px) and (orientation: landscape) {
+  .headtext_about_school {
+    width: 100%;
+    font-size: 3em;
+    animation: none;
+    letter-spacing: 10px;
+    line-height: 1.3em;
+    transition: opacity 3s ease-in-out;
+    animation: slideInFromRightMobile 7s ease-out;
+  }
+  .about_school_text {
+    width: 80%;
+    animation: none;
+    transition: opacity 3s ease-in-out;
+    animation: slideInFromLeftMobile 7s ease-out;
+    font-size: 20px;
+  }
+  .button_about_school {
+    width: 70%;
+  }
 
   @keyframes slideInFromRightMobile {
     0% {

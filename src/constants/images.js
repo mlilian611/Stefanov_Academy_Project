@@ -19,11 +19,12 @@ import bg_2 from "../assets/bg_2.png";
 import bg_1 from "../assets/bg_1.png";
 import bg_10 from "../assets/bg_10.png";
 import musica_note from "../assets/musical_note.jpg";
-import rainbow from "../assets/rainbow.jpg";
+import rainbow from "../assets/rainbow.png";
 import pianoclass from "../assets/pianoclass.png";
 import violinclass from "../assets/violinclass.png";
 import ukuleleclass from "../assets/ukuleleclass.png";
 import cheloclass from "../assets/cheloclass.png";
+import violaclasses from "../assets/violaclasses.png";
 import stefanov_music_logo_new from "../assets/stefanov_music_logo_new.JPG";
 import music_divider from "../assets/music_divider.png";
 import news from "../assets/news.jpg";
@@ -41,6 +42,11 @@ import piano_classes_boy_playing from "../assets/piano_classes_boy_playing.png";
 import piano_classes_girl_playing from "../assets/piano_classes_girl_playing.png";
 import violin_classes_girl_playing from "../assets/violin_classes_girl_playing.png";
 import cello_classes_girl_playing from "../assets/cello_classes_girl_playing.png";
+import solfej from "../assets/solfej.png";
+import solfej_bg from "../assets/solfej_bg.png";
+import mix from "../assets/mix.png";
+import online from "../assets/online.png";
+import plamena_manokaleva from "../assets/plamena_manokaleva.jpg";
 
 export default {
   stefanov_music_logo_1,
@@ -65,6 +71,7 @@ export default {
   violinclass,
   ukuleleclass,
   cheloclass,
+  violaclasses,
   stefanov_music_logo_new,
   music_divider,
   news,
@@ -86,4 +93,9 @@ export default {
   bg_12,
   bg_13,
   bg_14,
+  solfej,
+  solfej_bg,
+  mix,
+  online,
+  plamena_manokaleva,
 };

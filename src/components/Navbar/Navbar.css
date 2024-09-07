@@ -3,8 +3,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(0, 0, 0, 0.952);
+  background: rgb(0, 0, 0);
   padding: 1rem 2rem;
+  position: fixed; /* Sticky positioning */
+  top: 0; /* Stick to the top of the viewport */
+  z-index: 1500; /* Ensure it stays above other content */
+}
+
+/* Ensure the content below the navbar has enough padding/margin */
+.main-content {
+  padding-top: 4rem; /* Adjust based on navbar height if necessary */
 }
 
 .app__navbar-logo {
@@ -127,5 +135,41 @@
 
   .app__navbar-logo img {
     width: 110px;
+  }
+}
+
+@media only screen and (max-height: 568px) and (orientation: landscape) {
+  .app__navbar {
+    padding: 1rem;
+  }
+
+  .app__navbar-login {
+    display: none;
+  }
+
+  .app__navbar-logo img {
+    width: 90px;
+  }
+
+  /* Enable scrolling inside the small screen overlay */
+  .app__navbar-smallscreen_overlay {
+    height: 100vh; /* Full viewport height */
+    overflow-y: auto; /* Allow scrolling */
+    padding: 0; /* Remove padding */
+  }
+
+  .app__navbar-smallscreen_links {
+    list-style: none;
+    padding: 0; /* Ensure no padding around the list */
+    margin-top: 1rem; /* Add slight margin if needed to separate links from the top */
+  }
+
+  .app__navbar-smallscreen_links li {
+    margin: 2rem 0; /* Adjust the space between links if necessary */
+  }
+
+  /* Optional: Prevent body scroll when navbar overlay is open */
+  body.navbar-open {
+    overflow: hidden; /* Prevent background scroll */
   }
 }

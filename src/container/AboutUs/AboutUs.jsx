@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { images } from "../../constants";
 import "./AboutUs.css";
+import Modal from "../Modal/Modal";
 
 const AboutUs = () => {
   const [modalVisible, setModalVisible] = useState(false);
@@ -34,8 +35,8 @@ const AboutUs = () => {
                   <img src={images.gabriela_stefanova} alt="Front 1" />
                   <h2>Габриела Стефанова</h2>
                 </div>
-                <div className="flip-card-back">
-                  <img src={images.back_card} alt="Back 1" />
+                <div className="flip-card-back flip-card-back-piano">
+                  <img src={images.pianoclass} alt="Back 1" />
                   <h2>Пиано</h2>
                   <p>
                     Родена на 7.11.1996г. в гр. Пловдив, започва да свири на
@@ -70,8 +71,8 @@ const AboutUs = () => {
                   <img src={images.debora_stefanova} alt="Front 2" />
                   <h2>Дебора Стефанова</h2>
                 </div>
-                <div className="flip-card-back">
-                  <img src={images.back_card} alt="Back 2" />
+                <div className="flip-card-back flip-card-back-violin">
+                  <img src={images.violinclass} alt="Back 2" />
                   <h2>Цигулка</h2>
                   <p>
                     Родена през 1998 г. в Пловдив, България. Започва да се
@@ -109,8 +110,8 @@ const AboutUs = () => {
                   <img src={images.borislav_benchev} alt="Front 3" />
                   <h2>Борислав Бенчев</h2>
                 </div>
-                <div className="flip-card-back">
-                  <img src={images.back_card} alt="Back 3" />
+                <div className="flip-card-back flip-card-back-piano">
+                  <img src={images.pianoclass} alt="Back 3" />
                   <h2>Пиано</h2>
                   <p>
                     Роден на 21.01.1997г. в Ботевград, в музикално семейство.
@@ -145,8 +146,8 @@ const AboutUs = () => {
                   <img src={images.sofia_chernishkova} alt="Front 4" />
                   <h2>София Чернишкова</h2>
                 </div>
-                <div className="flip-card-back">
-                  <img src={images.back_card} alt="Back 4" />
+                <div className="flip-card-back flip-card-back-piano">
+                  <img src={images.pianoclass} alt="Back 4" />
                   <h2>Пиано</h2>
                   <p>
                     Родена на 23.02.2002г. в София. Завършва НМУ ''Л. Пипков'' в
@@ -175,27 +176,26 @@ const AboutUs = () => {
             <div className="flip-card">
               <div className="flip-card-inner">
                 <div className="flip-card-front">
-                  <img src={images.alek_canov} alt="Front 5" />
-                  <h2>Алек Цанов</h2>
+                  <img src={images.plamena_manokaleva} alt="Front 5" />
+                  <h2>Пламена Манокалева</h2>
                 </div>
-                <div className="flip-card-back">
-                  <img src={images.back_card} alt="Back 5" />
+                <div className="flip-card-back flip-card-back-chello">
+                  <img src={images.cheloclass} alt="Back 5" />
                   <h2>Виолончело</h2>
                   <p>
-                    Роден в гр. София в семейство на музиканти. Започва да учи
-                    виолончело на седем годишна възраст. Негови учители в НМУ
-                    „Л. Пипков” – София са Стефан Руневски, Ани Атанасова, Сета
-                    Балтаян. Завършва висше образование - степен Магистър в НМА
-                    „Панчо Владигеров” в класа на доц. д-р Атанас Кръстев.
+                    Завършва НУМСИ "проф. Панчо Владигеров" гр. Бургас със
+                    специалност виолончело в класа на г-жа Жасмина Чернева. Като
+                    ученичка участва активно в музикалния живот на училището.
+                    През 2017 и 2018 става част от програмата ЕРАЗЪМ+ с концерти
+                    в Германия и Унгария.
                     <div class="button">
                       <button
                         onClick={() =>
                           handleButtonClick({
-                            title: "Алек Цанов",
-                            content: `Алек Цанов е роден в гр. София в семейство на музиканти. Започва да учи виолончело на седем годишна възраст. Негови учители в НМУ „Л. Пипков” – София са Стефан Руневски, Ани Атанасова, Сета Балтаян. Завършва висше образование - степен Магистър в НМА „Панчо Владигеров” в класа на доц. д-р Атанас Кръстев.
-                          В момента е артист-оркестрант, водач на виолончелите в Академичен Симфоничен Оркестър към НМА „П. Владигеров” – София. Участва в многобройни концерти и продукции като студент в НМА. Печели пълна стипендия за участие в едномесечен фестивал-семинар “Luzerne music centre” в Ню Йорк, САЩ. Участва като камерен изпълнител в “International summer academy” в Австрия. Има изяви в Испания, САЩ и Австрия, като солист и камерен изпълнител. Изнася много камерни концерти в състава на „Арс Музика” и други състави.
-                          Носител на награди от конкурси в България, Сърбия и Македония. Участва в майсторски класове на световно известни виолончелисти и професори като: Анатоли Кръстев, Владимир Перлин, Калина Кръстева, Атанас Кръстев, Диляна Момчилова, Денис Северин, Разван Сума, Габриел Липкинд, Емилия Барановска, Антон Никулеску, Доминик дьо Вилиенкур и др. Алек Цанов участва като солист в много концерти в София и страната, в това число и в програмата „Дни на отворените врати” на НМУ „Любомир Пипков”, симфоничен оркестър „AGBU”, камерен оркестър „Орфей” - Перник, Академичен симфоничен оркестър на НМА - София, Симфониета Видин, както и като артист – оркестрант в различни симфонични оркестри и камерни състави като Младежка Филхармония „Пионер”, Класик ФМ Оркестър, Нов Симфоничен Оркестър и др. Има записи за Българското Национално Радио и Българската Национална Телевизия`,
-                            image: images.alek_canov,
+                            title: "Пламена Манокалева",
+                            content: `Пламена Манолакева завършва НУМСИ "проф. Панчо Владигеров" гр. Бургас със специалност виолончело в класа на г-жа Жасмина Чернева. Като ученичка участва активно в музикалния живот на училището. През 2017 и 2018 става част от програмата ЕРАЗЪМ+ с концерти в Германия и Унгария. Понастоящем учи в НМА "проф. Панчо Владигеров" гр. София в класа по виолончело на доц. Д-р Атанас Кръстев. Лауреат е на конкурси сред които: Национален конкурс за млади инструменталисти и певци "Светослав Обретенов" , Международен конкурс за изпълнение на немски и австрийска музика “MAGIC”, Международен виртуален конкурс “Flying stage” и др. Става лауреат на програмата “1000стипендии”.  Взима участие в различни фестивали- “Celleast” “IconArts", “Art academy” - Sozopol ,  „Челисимо“, „Тримонтиада” и др.  Дебютира като солист на Академичен Симфоничен Оркестър през 2021 г. в концерт, по случай 100 - годишнината на НМА "проф. Панчо Владигеров." През учебната 2023-2024 г. Пламена учи в National University of Music Bucharest  в класа по виолончело на проф. Разван Сума , чрез програмата ЕРАЗЪМ. Участва в майсторските класове на Готие Капюсон, Андрей Йоница, Александър Рам, Ласло Феньо, Валентин Радуциу, Денис Северин, Сергей Малов и др.`,
+                            image: images.plamena_manokaleva,
+                            // backgroundImage: "/assets/pianoclass.png",
                           })
                         }
                       >
@@ -220,24 +220,6 @@ const AboutUs = () => {
           </>
         )}
       </div>
-    </div>
-  );
-};
-
-const Modal = ({ content, closeModal, isHiding }) => {
-  return (
-    <div className={`popup ${isHiding ? "hide" : "show"}`}>
-      <img
-        className="pop-up_image_background"
-        src={images.back_card}
-        alt="Background"
-      />
-      <img className="pop-up_image" src={content.image} alt={content.image} />
-      <h3 className="pop-up_title">{content.title}</h3>
-      <p className="pop-up_content">{content.content}</p>
-      <button className="pop-up_close_button" onClick={closeModal}>
-        Затвори
-      </button>
     </div>
   );
 };

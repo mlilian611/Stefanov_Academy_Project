@@ -13,7 +13,7 @@
   align-items: flex-start;
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.603);
-  padding: 8em;
+  padding: 15em;
   width: 100%;
 }
 .contact__block {
@@ -29,9 +29,11 @@
 .contact__text {
   margin: 1em 0 1em -4em;
   padding: 0 2em;
-  width: 80%;
-  font-size: 1.7rem;
+  width: 90%;
+  font-size: 1.8rem;
   line-height: 2.5em;
+  border: 5px solid #d1b0cd71;
+  border-radius: 27px;
 }
 .contact_section {
   margin: 2em 0em 0em 0em;
@@ -114,7 +116,7 @@
     font-size: 1.3rem;
     line-height: 1.8em;
     padding: 2em 0em 0 0em;
-    margin: 0em 1em 0em 0em;
+    margin: 4em 1em 0em 0em;
     width: 100%;
     text-align: center;
     box-sizing: border-box;
@@ -173,6 +175,79 @@
 
   .map_container {
     margin-top: 0em;
+    box-sizing: border-box;
+  }
+}
+@media only screen and (max-height: 568px) and (orientation: landscape) {
+  .contact__container {
+    padding: 0em;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .contact__block {
+    border-radius: 8px;
+    padding: 0px;
+    width: 95%;
+  }
+
+  .contact__text {
+    font-size: 1.3rem;
+    line-height: 1.8em;
+    padding: 2em 0em 0 0em;
+    margin: 4em 1em 0em 0em;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+  }
+
+  .contact_section {
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .form {
+    width: 90%;
+    max-width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .form label {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+  }
+
+  .form input,
+  .form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .form textarea {
+    font-size: 1.5em;
+    height: 100px;
+  }
+
+  .form input[type="text"],
+  .form input[type="email"] {
+    height: 80px;
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .form input[type="submit"] {
+    font-size: 1em;
+    padding: 10px 0;
+    width: 100%;
     box-sizing: border-box;
   }
 }

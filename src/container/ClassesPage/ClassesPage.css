@@ -1,5 +1,5 @@
 .classes_page_section {
-  background-image: url("/src/assets/rainbow.jpg");
+  background-image: url("/src/assets/rainbow.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -9,24 +9,75 @@
   justify-content: center;
   color: #ffffff;
   padding: 5rem 0 5rem 0;
+  width: 100vw; /* Ensure section takes the full viewport width */
+  box-sizing: border-box; /* Ensure padding doesn't add extra width */
+  margin: 0; /* Remove any margin on the body that causes side gaps */
 }
-html {
+
+html,
+body {
   scroll-behavior: smooth;
+  margin: 0; /* Remove any default margin on body */
+  padding: 0;
+  width: 100%; /* Full width for the body */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+.play_pause_container {
+  width: 70%;
+  margin-top: 10px;
+  justify-content: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.play_pause {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+.all {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center; /* Center cards horizontally */
+  align-items: center; /* Center cards vertically */
+  width: 90vw;
+  padding: 0 2em;
+  background-color: var(--headtext-bg-color);
 }
 
 .content {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-bottom: 6rem;
-  margin-bottom: 2rem;
-  background-color: var(--headtext-bg-color);
+  margin-bottom: 0rem;
+  width: 100%;
+  box-sizing: border-box;
 }
+
 .flip_card {
-  width: 200px;
-  height: 500px;
-  margin: 10em 26em 2em 2em;
+  width: 500px; /* Make the card bigger */
+  height: auto;
+  margin: 0 auto;
   transform-style: preserve-3d;
+}
+
+.classes_img {
+  width: 100%;
+  height: auto;
+}
+
+.classes_img1 {
+  width: 100%; /* Ensure back image fits */
+  height: auto;
+  border-radius: 60px;
 }
 
 .flip_card:hover .flip_card_inner {
@@ -48,52 +99,121 @@ html {
 }
 
 .flip_card_back {
+  position: relative; /* Ensure the text is positioned relative to this container */
   transform: rotateY(180deg);
-}
-.classes_img {
-  width: 560px;
-  height: 500px;
+  width: 100%;
+  height: 100%;
 }
 
-.classes_img1 {
-  width: 450px;
-  height: 500px;
-}
-.classes_img1 {
-  border-radius: 60px;
-}
 .classes_text {
   font-size: 1.8em;
   text-wrap: wrap;
-  width: 50%;
+  width: 100%;
   line-height: 2em;
+  text-align: center;
 }
+
 .headtext_cormorant_classes {
-  margin-top: 2em;
+  position: absolute;
+  top: 10px; /* Adjust this value to position the text from the top */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%; /* Adjust the width as needed */
+  text-align: center;
+  color: #ffffff;
+  z-index: 1;
+  padding: 10px;
 }
-@media screen and (min-width: 330px) and (max-width: 900px) {
+
+.button_classes_flip_card button {
+  padding: 10px 20px;
+  background-color: #eeb8c8;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 1.2em;
+  text-align: center;
+}
+.instrument_text {
+  font-size: 4em;
+  letter-spacing: 0.4em;
+  margin-bottom: 1em;
+}
+.instrument_text_solfej {
+  margin-top: 1.2em;
+  font-size: 4em;
+  letter-spacing: 0.2em;
+  width: 110%;
+}
+.subtext_program_solfej {
+  margin-top: 1em;
+  font-size: 4em;
+  letter-spacing: 0.1em;
+}
+
+.subtext_program {
+  font-size: 4em;
+  letter-spacing: 0.2em;
+}
+
+@media screen and (max-width: 900px) {
+  .all {
+    grid-template-columns: 1fr; /* Single column layout on smaller screens */
+    grid-gap: 2em;
+  }
+
   .content {
     flex-direction: column;
   }
+
   .flip_card {
-    width: 200px;
-    height: 400px;
-    margin: 5em 5em 0em 0em;
+    width: 300px; /* Adjust card size for smaller screens */
+    margin: 5em 0em;
   }
 
   .classes_text {
     font-size: 1.4em;
     text-wrap: wrap;
-    width: 97%;
+    width: 100%; /* Full width for text */
     line-height: 2em;
+    text-align: center; /* Center text */
   }
+
   .headtext_cormorant_classes {
     margin-top: 0em;
     line-height: 3em;
   }
+
   .classes_img,
   .classes_img1 {
-    width: 300px;
-    height: 300px;
+    width: 100%; /* Adjust image size for smaller screens */
+    height: auto;
+  }
+  .instrument_text {
+    font-size: 3em;
+    letter-spacing: 0.1em;
+    margin: 0em 0em 0em 0em;
+  }
+  .instrument_text_solfej {
+    margin-right: 2em;
+    padding-right: 40px;
+    font-size: 3em;
+    letter-spacing: 0.2em;
+  }
+  .subtext_program {
+    font-size: 2.5em;
+    letter-spacing: 0.1em;
+  }
+  .subtext_program_solfej {
+    margin-top: 1em;
+    font-size: 2.5em;
+    letter-spacing: 0.1em;
+  }
+  .button_classes_flip_card button {
+    font-size: 0.9em;
+  }
+  .content {
+    padding-bottom: 0rem;
   }
 }

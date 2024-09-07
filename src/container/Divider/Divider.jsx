@@ -9,11 +9,8 @@ const Divider = () => {
   return (
     <div className="divider">
       <span className="divider__content">
-        <p className="quote">
-          "To send light into the darkness of men's hearts - such is the duty of
-          the artist."
-        </p>
-        <p className="quoted">Robert Schumann</p>
+        <p className="quote">"Където думите се провалят, говори музиката."</p>
+        <p className="quoted">Ханс Кристиан Андерсен</p>
       </span>
     </div>
   );

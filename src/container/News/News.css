@@ -132,3 +132,35 @@
     font-weight: lighter;
   }
 }
+
+@media only screen and (max-height: 568px) and (orientation: landscape) {
+  .headtext_news_first_page {
+    font-size: 3em;
+    letter-spacing: 7px;
+  }
+
+  #container {
+    width: 100%;
+    height: 400px;
+  }
+  .overlay_button {
+    width: 5%;
+    font-size: 7vw;
+    font-weight: bolder;
+  }
+  .img_text_overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    font-size: 19px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  .news_text {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+    font-weight: lighter;
+  }
+}

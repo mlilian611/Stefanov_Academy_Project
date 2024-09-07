@@ -17,7 +17,7 @@ const Classes = () => {
       <div className="classes">
         <div className="classes_item click-btn">
           <button
-            className="classes_button"
+            className="classes_button classes_button_piano"
             onClick={() => handleClick("piano")}
           >
             <img src={images.pianoclass} alt="pianoclass" />
@@ -26,7 +26,7 @@ const Classes = () => {
         </div>
         <div className="classes_item">
           <button
-            className="classes_button"
+            className="classes_button classes_button_violin"
             onClick={() => handleClick("violin")}
           >
             <img src={images.violinclass} alt="violinclass" />
@@ -35,7 +35,16 @@ const Classes = () => {
         </div>
         <div className="classes_item">
           <button
-            className="classes_button"
+            className="classes_button classes_button_viola"
+            onClick={() => handleClick("violin")}
+          >
+            <img src={images.violaclasses} alt="violaclasses" />
+          </button>
+          <h2>Виола</h2>
+        </div>
+        <div className="classes_item">
+          <button
+            className="classes_button classes_button_ukulele"
             onClick={() => handleClick("ukulele")}
           >
             <img src={images.ukuleleclass} alt="ukeleleclass" />
@@ -44,12 +53,39 @@ const Classes = () => {
         </div>
         <div className="classes_item">
           <button
-            className="classes_button"
+            className="classes_button chello classes_button_chello"
             onClick={() => handleClick("chelloclass")}
           >
             <img src={images.cheloclass} alt="cheloclass" />
           </button>
           <h2>Виолончело</h2>
+        </div>
+        <div className="classes_item">
+          <button
+            className="classes_button chello classes_button_solfej"
+            onClick={() => handleClick("solfej")}
+          >
+            <img src={images.solfej} alt="solfej" />
+          </button>
+          <h2> Солфеж и теория на музиката</h2>
+        </div>
+        <div className="classes_item">
+          <button
+            className="classes_button chello classes_button_chello"
+            onClick={() => handleClick("chelloclass")}
+          >
+            <img src={images.mix} alt="mix" />
+          </button>
+          <h2>Музикален микс</h2>
+        </div>
+        <div className="classes_item">
+          <button
+            className="classes_button chello classes_button_chello"
+            onClick={() => handleClick("chelloclass")}
+          >
+            <img src={images.online} alt="online" />
+          </button>
+          <h2> Онлайн уроци</h2>
         </div>
       </div>
     </div>

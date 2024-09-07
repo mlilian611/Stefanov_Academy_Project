@@ -1,5 +1,5 @@
 .program_page_section {
-  background-image: url("/src/assets/rainbow.jpg");
+  background-image: url("/src/assets/rainbow.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -119,6 +119,61 @@
 @media screen and (max-width: 650px) {
   .content_with_image_program {
     background-color: rgba(240, 235, 243, 0.753);
+  }
+
+  .content_with_image_program {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .program_img,
+  .program_img2,
+  .program_img3,
+  .program_img4 {
+    width: 180%;
+    max-width: 180px;
+    height: auto;
+    margin-top: 0;
+  }
+
+  .program_images {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .program_text {
+    margin: 1px;
+    width: 100%;
+    font-size: 1.4rem;
+    line-height: 1.6;
+  }
+
+  .headtext_program {
+    font-size: 3em;
+    margin-bottom: 1em;
+    text-align: center;
+    background-color: #b8a6c2c0;
+    padding: 30px;
+    letter-spacing: 5px;
+  }
+  .subtext_program {
+    font-size: 2.5rem;
+    margin-bottom: 1em;
+  }
+
+  .sign_up_program {
+    margin: 60px 0 0px 0;
+    width: 80%;
+    font-size: 20px;
+    text-align: center;
+  }
+}
+@media only screen and (max-height: 568px) and (orientation: landscape) {
+  .content_with_image_program {
+    background-color: #b8a6c2c0;
+  }
+  .headtext_program {
+    background-color: #b8a6c2c0;
   }
 
   .content_with_image_program {

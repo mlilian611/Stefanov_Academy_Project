@@ -12,21 +12,15 @@ const ScholarshipPage = () => {
               <h1 className="headtext_scholarship">Стипендии</h1>
             </div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-              interdum cursus leo, ac rutrum enim vulputate sit amet. Praesent
-              fringilla sem diam, eget scelerisque quam vehicula sit amet. Nulla
-              nec erat eu diam tempor cursus. Donec tincidunt lobortis felis, in
-              mattis urna efficitur at. Morbi congue, lorem et condimentum
-              sollicitudin, massa augue malesuada velit, ut fringilla nisi massa
-              a erat. Nam nisi ex, tincidunt sit amet pharetra sit amet,
-              pellentesque ac diam. Phasellus pretium ut justo eget congue.
-              Praesent vitae ornare lectus. Nunc non orci at tortor pretium
-              ullamcorper. Cras porttitor eget nisl ut consequat. Ut nunc enim,
-              posuere id mollis eget, pharetra vitae massa. Nunc leo odio,
-              porttitor in convallis nec, finibus vehicula libero. Praesent
-              sagittis posuere mauris, ut porta arcu imperdiet nec. Curabitur
-              vestibulum pellentesque lobortis. Suspendisse lacus nibh, varius
-              eget tellus quis, vulputate vehicula elit.
+              В Stefanov Music House вярваме в подпомагане на младите таланти и
+              връщане обратно в обществото, това което е вложено в нас. Нашата
+              мечта е незаменимото обогатяване от изучаването на музиката да
+              бъде достъпно за всеки! Събраният фонд е с насоченост деца в
+              неравностойно положение (деца лишени от родителска грижа, деца от
+              социално слаби семейства и деца със специални образователни
+              потребности). В случай, че желаете да кандидатствате за стипендия,
+              да дарите към каузата или да получите повече информация не се
+              колебайте да се свържите.
             </p>
             <button className="sign_up_scholarship">
               <a href="/Contact">Пиши ни за повече информация</a>

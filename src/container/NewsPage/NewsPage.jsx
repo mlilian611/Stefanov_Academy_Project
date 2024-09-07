@@ -25,7 +25,7 @@ const NewsPage = () => {
               <h1 className="subtext_program">Събитие 1</h1>
             </div>
 
-            <p>
+            <p className="text_news">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
               interdum cursus leo, ac rutrum enim vulputate sit amet. Praesent
               fringilla sem diam, eget scelerisque quam vehicula sit amet. Nulla
@@ -50,7 +50,7 @@ const NewsPage = () => {
               <h1 className="subtext_program">Събитие 2</h1>
             </div>
 
-            <p>
+            <p className="text_news">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
               interdum cursus leo, ac rutrum enim vulputate sit amet. Praesent
               fringilla sem diam, eget scelerisque quam vehicula sit amet. Nulla
@@ -76,7 +76,7 @@ const NewsPage = () => {
             <div className="headtext_cormorant_news">
               <h1 className="subtext_program">Събитие 3</h1>
             </div>
-            <p>
+            <p className="text_news">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
               interdum cursus leo, ac rutrum enim vulputate sit amet. Praesent
               fringilla sem diam, eget scelerisque quam vehicula sit amet. Nulla
@@ -102,7 +102,7 @@ const NewsPage = () => {
             <div className="headtext_cormorant_news">
               <h1 className="subtext_program">Събитие 4</h1>
             </div>
-            <p>
+            <p className="text_news">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
               interdum cursus leo, ac rutrum enim vulputate sit amet. Praesent
               fringilla sem diam, eget scelerisque quam vehicula sit amet. Nulla

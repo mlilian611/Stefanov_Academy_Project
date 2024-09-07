@@ -14,16 +14,36 @@ const Footer = () => (
           </a>{" "}
         </h1>
 
-        <p className="p__opensans">+359 88888888</p>
-        <p className="p__opensans">+359 89898989</p>
+        <p className="p__opensans">
+          <a
+            href="tel:+359 894301301 "
+            onClick={(e) => {
+              e.preventDefault();
+              window.location.href = "+359 894301301 ";
+            }}
+          >
+            +359 894301301
+          </a>
+        </p>
+        <p className="p__opensans">
+          <a
+            href="mailto: stefanovmusichouse@gmail.com"
+            onClick={(e) => {
+              e.preventDefault();
+              window.location.href = "stefanovmusichouse@gmail.com";
+            }}
+          >
+            stefanovmusichouse@gmail.com
+          </a>
+        </p>
       </div>
       <div className="app__footer-links_logo">
         <img src={images.stefanov} alt="footer_logo" />
         <p className="p__opensans_quote">
-          &quot;Music hath charms to soothe the savage beast, to soften rocks or
-          bend a knotted oak.&quot;
+          &quot;"Музиката е по-възвишено откровение от всяка мъдрост и
+          философия."&quot;
         </p>
-
+        <p className="p__opensans_author">Лудвиг Ван Бетовен</p>
         <div className="app__footer-links_icons">
           <a
             href="https://www.facebook.com/profile.php?id=61554225843396"
@@ -32,7 +52,6 @@ const Footer = () => (
           >
             <FiFacebook />
           </a>
-
           <a
             href="https://www.instagram.com/stefanov.music.house/"
             target="_blank"
@@ -42,6 +61,7 @@ const Footer = () => (
           </a>
         </div>
       </div>
+
       <div className="app__footer-links_work">
         <h1 className="app__footer-headtext"> Работни часове</h1>
         <p className="p__opensans">Понеделник - Петък:</p>
@@ -52,7 +72,7 @@ const Footer = () => (
     </div>
     <div className="footer__copyright">
       <p className="p__opensans">
-        2024 Stefanov Music Academy. All Rights reserved.
+        2024 Stefanov Music House. All Rights reserved.
       </p>
     </div>
   </div>

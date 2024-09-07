@@ -79,3 +79,27 @@
     flex-direction: column;
   }
 }
+
+@media only screen and (max-height: 568px) and (orientation: landscape) {
+  .headtext_news {
+    font-size: 3.5em;
+    background-color: #e1d4e6b9;
+    padding: 30px;
+    letter-spacing: 15px;
+  }
+  .news_img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+  }
+  .content_with_image {
+    flex-direction: column;
+  }
+  .subtext_program {
+    font-size: 2em;
+    letter-spacing: 0.1em;
+  }
+  .text_news {
+    line-height: 2em;
+  }
+}
