@@ -63,6 +63,18 @@ body.active-modal {
   border-radius: 30px;
   overflow-y: auto;
 }
+.pop-up_close_button {
+  padding: 10px 20px;
+  background-color: #a8a5c8;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1em;
+  z-index: 1001;
+  position: relative;
+}
+
 .popup::-webkit-scrollbar {
   width: 7px;
 }
@@ -107,16 +119,6 @@ body.active-modal {
   font-size: 22px;
   width: 100%;
   color: #997597;
-}
-
-.pop-up_close_button {
-  padding: 10px 20px;
-  background-color: #a8a5c8;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-top: 1em;
 }
 
 .overlay {
@@ -292,7 +294,7 @@ button:hover {
   .headtext_cormorant_about_us {
     letter-spacing: 0.2em;
     padding: 150px 0 150px 0px;
-    font-size: 70px;
+    font-size: 2.5em;
   }
   .card {
     width: 400px;
@@ -334,8 +336,11 @@ button:hover {
   }
 
   .card-grid {
-    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
     gap: 10px;
+    padding-bottom: 10em;
+    width: 100%;
   }
 
   .popup {

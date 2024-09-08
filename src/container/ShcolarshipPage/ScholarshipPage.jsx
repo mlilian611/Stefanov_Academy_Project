@@ -22,6 +22,11 @@ const ScholarshipPage = () => {
               да дарите към каузата или да получите повече информация не се
               колебайте да се свържите.
             </p>
+            <p className="scholarship_quote">
+              &quot;Не е важно колко даваме, а колко обич влагаме в даването.
+              &quot;
+            </p>
+            <p className="scholarship_quoted">Майка Тереза</p>
             <button className="sign_up_scholarship">
               <a href="/Contact">Пиши ни за повече информация</a>
             </button>

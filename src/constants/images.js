@@ -47,6 +47,40 @@ import solfej_bg from "../assets/solfej_bg.png";
 import mix from "../assets/mix.png";
 import online from "../assets/online.png";
 import plamena_manokaleva from "../assets/plamena_manokaleva.jpg";
+import stefanov_music_logo_2 from "../assets/stefanov_music_logo_2.png";
+import english from "../assets/english.png";
+import italian from "../assets/italian.png";
+import tchaikoivski from "../assets/tchaikovski.jpg";
+import tchaikoivski1 from "../assets/tchaikovski1.png";
+import tchaikoivsk2 from "../assets/tchaikovski2.jpg";
+import tchaikoivski3 from "../assets/tchaikovski3.jpg";
+import tchaikoivski4 from "../assets/tchaikovski4.jpg";
+import tchaikovski5 from "../assets/tchaikovski5.jpg";
+import jconcert from "../assets/jconcert.jpg";
+import jconcert1 from "../assets/jconcert1.jpg";
+import jconcert2 from "../assets/jconcert2.jpg";
+import jconcert3 from "../assets/jconcert3.jpg";
+import jconcert4 from "../assets/jconcert4.jpg";
+import jconcert5 from "../assets/jconcert5.jpg";
+import jconcert6 from "../assets/jconcert6.jpg";
+import jconcert7 from "../assets/jconcert7.jpg";
+import jconcert8 from "../assets/jconcert8.jpg";
+import jconcert9 from "../assets/jconccert9.jpg";
+import jconcert10 from "../assets/jconcert10.jpg";
+import jconcert11 from "../assets/jconcert11.jpg";
+import dconcert from "../assets/dconcert.jpg";
+import dconcert1 from "../assets/dconcert1.jpeg";
+import dconcert2 from "../assets/dconcert2.jpeg";
+import dconcert3 from "../assets/dconcert3.png";
+import dconcert4 from "../assets/dconcert4.jpeg";
+import dconcert5 from "../assets/dconcert5.jpeg";
+import dconcert6 from "../assets/dconcert6.jpeg";
+import dconcert7 from "../assets/dconcert7.jpeg";
+import dconcert8 from "../assets/dconcert8.jpeg";
+import dconcert9 from "../assets/dconcert9.jpeg";
+import dconcert10 from "../assets/dconcert10.jpeg";
+import dconcert11 from "../assets/dconcert11.jpeg";
+import dconcert12 from "../assets/dconcert12.jpeg";
 
 export default {
   stefanov_music_logo_1,
@@ -98,4 +132,38 @@ export default {
   mix,
   online,
   plamena_manokaleva,
+  stefanov_music_logo_2,
+  english,
+  italian,
+  tchaikoivski,
+  tchaikoivski1,
+  tchaikoivsk2,
+  tchaikoivski3,
+  tchaikoivski4,
+  tchaikovski5,
+  jconcert,
+  jconcert1,
+  jconcert2,
+  jconcert3,
+  jconcert4,
+  jconcert5,
+  jconcert6,
+  jconcert7,
+  jconcert8,
+  jconcert9,
+  jconcert10,
+  jconcert11,
+  dconcert,
+  dconcert1,
+  dconcert2,
+  dconcert3,
+  dconcert4,
+  dconcert5,
+  dconcert6,
+  dconcert7,
+  dconcert8,
+  dconcert9,
+  dconcert10,
+  dconcert11,
+  dconcert12,
 };

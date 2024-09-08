@@ -1,0 +1,121 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  z-index: 1000;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.active-modal {
+  overflow: hidden;
+}
+
+.modal .close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+@media screen and (max-width: 900px) {
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+  }
+
+  .active-modal {
+    overflow: hidden;
+  }
+
+  .modal .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  .all {
+    grid-template-columns: 1fr;
+    grid-gap: 2em;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .flip_card {
+    width: 300px;
+    margin: 5em 0em;
+  }
+
+  .classes_text {
+    font-size: 1.4em;
+    text-wrap: wrap;
+    width: 100%;
+    line-height: 2em;
+    text-align: center;
+  }
+
+  .headtext_cormorant_classes {
+    margin-top: 0em;
+    line-height: 3em;
+  }
+
+  .classes_img,
+  .classes_img1 {
+    width: 100%;
+    height: auto;
+  }
+  .instrument_text {
+    font-size: 3em;
+    letter-spacing: 0.1em;
+    margin: 0em 0em 0em 0em;
+  }
+  .instrument_text_solfej {
+    margin-right: 2em;
+    padding-right: 40px;
+    font-size: 3em;
+    letter-spacing: 0.2em;
+  }
+  .subtext_program {
+    font-size: 2.5em;
+    letter-spacing: 0.1em;
+  }
+  .subtext_program_solfej {
+    margin-top: 1em;
+    font-size: 2.5em;
+    letter-spacing: 0.1em;
+  }
+  .button_classes_flip_card button {
+    font-size: 0.9em;
+  }
+  .content {
+    padding-bottom: 0rem;
+  }
+}

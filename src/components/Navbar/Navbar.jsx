@@ -48,7 +48,7 @@ const Navbar = () => {
               <Link to="/classespage">Музикални Уроци</Link>
             </li>
             <li className="p__opensans">
-              <Link to="/classespage/language-classes">Eзикови Уроци</Link>
+              <Link to="/classespage/langclasses">Eзикови Уроци</Link>
             </li>
           </ul>
         </li>
@@ -59,7 +59,7 @@ const Navbar = () => {
           <Link to="/newspage">Събития</Link>
         </li>
         <li className="p__opensans">
-          <Link to="/about-us">За нас</Link>
+          <Link to="/about-us">Преподаватели</Link>
         </li>
         <li className="p__opensans">
           <Link to="/contact">Контакти</Link>
@@ -96,20 +96,41 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="p__opensans">
-                <Link to="/classespage" onClick={() => setToggleMenu(false)}>
-                  Уроци
-                </Link>
-                <ul className="app__navbar-smallscreen_dropdown">
-                  <li className="p__opensans">
-                    <Link to="/classespage/music-classes">Музикални Уроци</Link>
-                  </li>
-                  <li className="p__opensans">
-                    <Link to="/classespage/language-classes">
-                      Язикови Уроци
-                    </Link>
-                  </li>
-                </ul>
+                <div className="dropdown-container">
+                  <div
+                    className="dropdown-toggle"
+                    onClick={() => setShowDropdown((prev) => !prev)}
+                  >
+                    Уроци
+                    <span className={`arrow ${showDropdown ? "open" : ""}`}>
+                      &#9662;
+                    </span>
+                  </div>
+                  <ul
+                    className={`app__navbar-smallscreen_dropdown ${
+                      showDropdown ? "show" : ""
+                    }`}
+                  >
+                    <li className="p__opensans">
+                      <Link
+                        to="/classespage"
+                        onClick={() => setToggleMenu(false)}
+                      >
+                        Музикални Уроци
+                      </Link>
+                    </li>
+                    <li className="p__opensans">
+                      <Link
+                        to="classespage/langclasses"
+                        onClick={() => setToggleMenu(false)}
+                      >
+                        Eзикови Уроци
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
               </li>
+
               <li className="p__opensans">
                 <Link
                   to="/scholarshippage"
@@ -125,7 +146,7 @@ const Navbar = () => {
               </li>
               <li className="p__opensans">
                 <Link to="/about-us" onClick={() => setToggleMenu(false)}>
-                  За нас
+                  Преподаватели
                 </Link>
               </li>
               <li className="p__opensans">

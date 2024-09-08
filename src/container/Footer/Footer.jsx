@@ -40,7 +40,7 @@ const Footer = () => (
       <div className="app__footer-links_logo">
         <img src={images.stefanov} alt="footer_logo" />
         <p className="p__opensans_quote">
-          &quot;"Музиката е по-възвишено откровение от всяка мъдрост и
+          &quot;"Музиката е по-възвишено откоровение от всяка мъдрост и
           философия."&quot;
         </p>
         <p className="p__opensans_author">Лудвиг Ван Бетовен</p>
@@ -65,9 +65,9 @@ const Footer = () => (
       <div className="app__footer-links_work">
         <h1 className="app__footer-headtext"> Работни часове</h1>
         <p className="p__opensans">Понеделник - Петък:</p>
-        <p className="p__opensans">08:00 - 12:00 </p>
+        <p className="p__opensans">08:00 - 21:00 </p>
         <p className="p__opensans">Събота - Неделя:</p>
-        <p className="p__opensans">07:00 - 11:00 </p>
+        <p className="p__opensans">10:00 - 20:00 </p>
       </div>
     </div>
     <div className="footer__copyright">

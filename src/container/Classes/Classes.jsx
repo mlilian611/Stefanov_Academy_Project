@@ -12,7 +12,7 @@ const Classes = () => {
   return (
     <div className="classes_section">
       <div className="headtext__cormorant_classes">
-        <h1 className="headtext_classes_first_page">Уроци</h1>
+        <h1 className="headtext_classes_first_page">Музикални Уроци</h1>
       </div>
       <div className="classes">
         <div className="classes_item click-btn">
@@ -36,7 +36,7 @@ const Classes = () => {
         <div className="classes_item">
           <button
             className="classes_button classes_button_viola"
-            onClick={() => handleClick("violin")}
+            onClick={() => handleClick("viola")}
           >
             <img src={images.violaclasses} alt="violaclasses" />
           </button>
@@ -72,7 +72,7 @@ const Classes = () => {
         <div className="classes_item">
           <button
             className="classes_button chello classes_button_chello"
-            onClick={() => handleClick("chelloclass")}
+            onClick={() => handleClick("mix")}
           >
             <img src={images.mix} alt="mix" />
           </button>
@@ -81,7 +81,7 @@ const Classes = () => {
         <div className="classes_item">
           <button
             className="classes_button chello classes_button_chello"
-            onClick={() => handleClick("chelloclass")}
+            onClick={() => handleClick("online")}
           >
             <img src={images.online} alt="online" />
           </button>

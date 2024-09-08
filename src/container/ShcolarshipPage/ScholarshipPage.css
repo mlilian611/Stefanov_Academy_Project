@@ -37,6 +37,19 @@
   width: 30%;
   background-color: rgb(209, 184, 203);
 }
+
+.scholarship_quote {
+  font-family: var(--font-alt);
+  font-weight: 100;
+  letter-spacing: 0.04em;
+  line-height: 40px;
+  font-size: 1em;
+  font-style: italic;
+}
+.scholarship_quoted {
+  margin-top: 0.5em;
+  font-family: var(--font-alt);
+}
 @media screen and (max-width: 650px) {
   .headtext_cormorant_scholarship {
     text-align: center;

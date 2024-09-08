@@ -49,6 +49,7 @@ body {
   width: 90vw;
   padding: 0 2em;
   background-color: var(--headtext-bg-color);
+  margin-left: 1em;
 }
 
 .content {

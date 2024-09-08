@@ -40,7 +40,7 @@ const Contact = () => {
               <p>
                 Останете ни Вашето запитване и контакт за обратна връзка и ние
                 ще се свържем с Вас! Може и да ни потърсите на
-                <a href="tel:++359894301301"></a>+359894301301 или{" "}
+                <a href="tel:++359894301301"></a> +359894301301 или{" "}
                 <a href="mailto: stefanovmusichouse@gmail.com"></a>
                 stefanovmusichouse@gmail.com
               </p>

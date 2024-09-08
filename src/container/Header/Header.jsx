@@ -24,7 +24,7 @@ const Header = () => {
         headerElement.style.backgroundImage = `url(${images.stefanov_music_logo_1})`;
       } else {
         headerElement.style.backgroundSize = "cover";
-        headerElement.style.backgroundImage = `url(${images.stefanov_banner})`;
+        headerElement.style.backgroundImage = `url(${images.stefanov_music_logo_2})`;
       }
     };
     handleResize();

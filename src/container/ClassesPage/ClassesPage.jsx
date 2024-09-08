@@ -16,6 +16,10 @@ const ClassesPage = () => {
   const violinRef = useRef(null);
   const ukuleleRef = useRef(null);
   const celloRef = useRef(null);
+  const violaRef = useRef(null);
+  const solfejRef = useRef(null);
+  const mixRef = useRef(null);
+  const onlineRef = useRef(null);
   const location = useLocation();
   const [isUserInteracted, setIsUserInteracted] = useState(false);
   const [isPianoFlipped, setPianoFlipped] = useState(false);
@@ -41,6 +45,10 @@ const ClassesPage = () => {
       const element = {
         piano: pianoRef.current,
         violin: violinRef.current,
+        viola: violaRef.current,
+        solfej: solfejRef.current,
+        mix: mixRef.current,
+        online: onlineRef.current,
         ukulele: ukuleleRef.current,
         cello: celloRef.current,
       }[id];
@@ -99,6 +107,13 @@ const ClassesPage = () => {
           card.classList.add("hover");
           setFlipped(true);
           audio.play();
+          if (isUserInteracted) {
+            try {
+              audio.play();
+            } catch (error) {
+              console.error("Audio playback failed:", error);
+            }
+          }
         }
       }
     };
@@ -134,7 +149,7 @@ const ClassesPage = () => {
     <div className="classes_page_section">
       <div id="piano" ref={pianoRef} className="classes_block">
         <div className="headtext_cormorant_program">
-          <h1 className="headtext_program">Уроци</h1>
+          <h1 className="headtext_program">Музикални уроци</h1>
           <h3 className="headtext_program_subtext"></h3>
         </div>
         <div className="all">
@@ -304,7 +319,7 @@ const ClassesPage = () => {
               </div>
             </div>
           </div>
-          <div id="violin" ref={violinRef} className="classes_block">
+          <div id="viola" ref={violaRef} className="classes_block">
             <div className="content">
               <div className="flip_card">
                 <div className="flip_card_inner">
@@ -525,7 +540,7 @@ const ClassesPage = () => {
               </>
             )}
           </div>
-          <div id="solfej" className="classes_block">
+          <div id="solfej" ref={solfejRef} className="classes_block">
             <div className="content">
               <div className="flip_card">
                 <div className="flip_card_inner">
@@ -600,7 +615,7 @@ const ClassesPage = () => {
               </>
             )}
           </div>
-          <div id="musical_mix" className="classes_block">
+          <div id="mix" ref={mixRef} className="classes_block">
             <div className="content">
               <div className="flip_card">
                 <div className="flip_card_inner">
@@ -630,7 +645,7 @@ const ClassesPage = () => {
                       <button
                         onClick={() =>
                           handleButtonClick({
-                            content: `Разбирайки значимоста това да знаеш какво се случва в музиката и на нотния лист предлагаме и уроци по Солфеж и теория на музиката. По лесен и достъпен начин се формират знания за точната наука зад изкуството и нейните елементи, даващи по-голямата яснота и свобода за интерпретиране и навлизане в музикалния свят. Работим с екип от млади професионалисти заредени със знания и опит, готови да предадат наученото с желание и позитивизъм. Времетраенето на един урок варира спрямо нуждите на учащия се. Те могат да бъдат 30мин, 45мин или 1 астрономически час. Всички индивидуални уроци могат да се взимат и под формата на онлайн обучение.`,
+                            content: `Искате да се започнете изучаването на инстумент, но не знаете кой да изберете? Всичко ви изглежда интересно или просто искате да пробвате различни варианти? Включете се в този уникален курс и изпробвайте 4 различни инструмента в рамките на месец - пиано, цигулка, виолончело, укулеле.`,
                             image: images.mix,
                           })
                         }
@@ -658,7 +673,7 @@ const ClassesPage = () => {
               </>
             )}
           </div>
-          <div id="online" className="classes_block">
+          <div id="online" ref={onlineRef} className="classes_block">
             <div className="content">
               <div className="flip_card">
                 <div className="flip_card_inner">

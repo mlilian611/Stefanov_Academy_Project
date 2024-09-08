@@ -26,7 +26,7 @@ const AboutUs = () => {
   return (
     <div>
       <div className="app__about_us">
-        <h1 className="headtext_cormorant_about_us">За нас</h1>
+        <h1 className="headtext_cormorant_about_us">Преподаватели</h1>
         <div className="card-grid">
           <div className="card">
             <div className="flip-card">
