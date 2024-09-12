@@ -23,7 +23,7 @@ const Langclasseshome = () => {
           >
             <img src={images.english} alt="english" />
           </button>
-          <h2>Пиано</h2>
+          <h2>Английски език</h2>
         </div>
         <div className="classes_item">
           <button
@@ -32,7 +32,7 @@ const Langclasseshome = () => {
           >
             <img src={images.italian} alt="italian" />
           </button>
-          <h2>Цигулка</h2>
+          <h2>Италиански език</h2>
         </div>
       </div>
     </div>

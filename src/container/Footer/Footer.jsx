@@ -25,15 +25,15 @@ const Footer = () => (
             +359 894301301
           </a>
         </p>
-        <p className="p__opensans">
+        <p className="p__opensans email">
           <a
-            href="mailto: stefanovmusichouse@gmail.com"
+            href="mailto: stefanov.music.house@gmail.com"
             onClick={(e) => {
               e.preventDefault();
-              window.location.href = "stefanovmusichouse@gmail.com";
+              window.location.href = "stefanov.music.house@gmail.com";
             }}
           >
-            stefanovmusichouse@gmail.com
+            stefanov.music.house@gmail.com
           </a>
         </p>
       </div>

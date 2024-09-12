@@ -42,6 +42,8 @@ import piano_classes_boy_playing from "../assets/piano_classes_boy_playing.png";
 import piano_classes_girl_playing from "../assets/piano_classes_girl_playing.png";
 import violin_classes_girl_playing from "../assets/violin_classes_girl_playing.png";
 import cello_classes_girl_playing from "../assets/cello_classes_girl_playing.png";
+import bg_ukulele from "../assets/bg_ukulele.png";
+import bg_music from "../assets/bg_music.png";
 import solfej from "../assets/solfej.png";
 import solfej_bg from "../assets/solfej_bg.png";
 import mix from "../assets/mix.png";
@@ -99,6 +101,7 @@ export default {
   bg_3,
   bg_1,
   bg_10,
+  bg_music,
   musica_note,
   rainbow,
   pianoclass,
@@ -123,6 +126,7 @@ export default {
   piano_classes_girl_playing,
   cello_classes_girl_playing,
   violin_classes_girl_playing,
+  bg_ukulele,
   bg_2,
   bg_12,
   bg_13,

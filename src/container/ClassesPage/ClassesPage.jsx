@@ -27,10 +27,6 @@ const ClassesPage = () => {
   const [modalVisible, setModalVisible] = useState(false);
   const [modalContent, setModalContent] = useState({});
   const [isHiding, setIsHiding] = useState(false);
-  const [isPianoPlaying, setPianoPlaying] = useState(false);
-  const [isViolinPlaying, setViolinPlaying] = useState(false);
-  const audioPiano = useRef(new Audio(Beethoven_Sonata_op_13)).current;
-  const audioViolin = useRef(new Audio(violin_classes)).current;
 
   useEffect(() => {
     const handleUserInteraction = () => {
@@ -67,53 +63,36 @@ const ClassesPage = () => {
     return /Mobi|Android/i.test(navigator.userAgent);
   };
 
-  const handleMouseEnter = (audio, setFlipped) => {
+  const handleMouseEnter = (setFlipped) => {
     return (event) => {
       const card = event.currentTarget.closest(".flip_card");
       if (!isMobileDevice() && !card.classList.contains("hover")) {
         card.classList.add("hover");
         setFlipped(true);
         // Ensure audio play is triggered by a user interaction
-        try {
-          audio.play();
-        } catch (error) {
-          console.error("Audio playback failed:", error);
-        }
       }
     };
   };
-  const handleMouseLeave = (audio, setFlipped) => {
+  const handleMouseLeave = (setFlipped) => {
     return (event) => {
       const card = event.currentTarget.closest(".flip_card");
       if (!isMobileDevice()) {
         card.classList.remove("hover");
         setFlipped(false);
-        audio.pause();
-        audio.currentTime = 0;
       }
     };
   };
 
-  const handleClick = (audio, isFlipped, setFlipped) => {
+  const handleClick = (isFlipped, setFlipped) => {
     return (event) => {
       const card = event.currentTarget.closest(".flip_card");
       if (isMobileDevice()) {
         if (isFlipped) {
           card.classList.remove("hover");
           setFlipped(false);
-          audio.pause();
-          audio.currentTime = 0;
         } else {
           card.classList.add("hover");
           setFlipped(true);
-          audio.play();
-          if (isUserInteracted) {
-            try {
-              audio.play();
-            } catch (error) {
-              console.error("Audio playback failed:", error);
-            }
-          }
         }
       }
     };
@@ -131,18 +110,6 @@ const ClassesPage = () => {
       setIsHiding(false);
       document.body.classList.remove("active-modal");
     }, 300);
-  };
-
-  const handlePlayPause = (audio, isPlaying, setIsPlaying) => {
-    return () => {
-      if (isPlaying) {
-        audio.pause();
-        setIsPlaying(false);
-      } else {
-        audio.play();
-        setIsPlaying(true);
-      }
-    };
   };
 
   return (
@@ -163,13 +130,7 @@ const ClassesPage = () => {
                     className="classes_img"
                     src={images.pianoclass}
                     alt="Front Image"
-                    onMouseEnter={handleMouseEnter(audioPiano, setPianoFlipped)}
-                    onMouseLeave={handleMouseLeave(audioPiano, setPianoFlipped)}
-                    onClick={handleClick(
-                      audioPiano,
-                      isPianoFlipped,
-                      setPianoFlipped
-                    )}
+                    onClick={handleClick(setPianoFlipped)}
                   />
                 </div>
                 <div className="flip_card_back">
@@ -181,36 +142,10 @@ const ClassesPage = () => {
                       className="classes_img1"
                       src={images.piano_classes_boy_playing}
                       alt="Back Image"
-                      onMouseEnter={handleMouseEnter(
-                        audioPiano,
-                        setPianoFlipped
-                      )}
-                      onMouseLeave={handleMouseLeave(
-                        audioPiano,
-                        setPianoFlipped
-                      )}
-                      onClick={handleClick(
-                        audioPiano,
-                        isPianoFlipped,
-                        setPianoFlipped
-                      )}
+                      onMouseEnter={handleMouseEnter(setPianoFlipped)}
+                      onMouseLeave={handleMouseLeave(setPianoFlipped)}
+                      onClick={handleClick(isPianoFlipped, setPianoFlipped)}
                     />
-                    <div className="play_pause_container">
-                      <button
-                        className="play_pause"
-                        onClick={handlePlayPause(
-                          audioPiano,
-                          isPianoPlaying,
-                          setPianoPlaying
-                        )}
-                      >
-                        <i
-                          className={`fas ${
-                            isPianoPlaying ? "fa-pause" : "fa-play"
-                          }`}
-                        ></i>
-                      </button>
-                    </div>
                   </div>
                   <div className="button_classes_flip_card">
                     <button
@@ -244,19 +179,9 @@ const ClassesPage = () => {
                       className="classes_img"
                       src={images.violinclass}
                       alt="Front Image"
-                      onMouseEnter={handleMouseEnter(
-                        audioViolin,
-                        setViolinFlipped
-                      )}
-                      onMouseLeave={handleMouseLeave(
-                        audioViolin,
-                        setViolinFlipped
-                      )}
-                      onClick={handleClick(
-                        audioViolin,
-                        isViolinFlipped,
-                        setViolinFlipped
-                      )}
+                      onMouseEnter={handleMouseEnter(setViolinFlipped)}
+                      onMouseLeave={handleMouseLeave(setViolinFlipped)}
+                      onClick={handleClick(isViolinFlipped, setViolinFlipped)}
                     />
                   </div>
                   <div className="flip_card_back">
@@ -267,36 +192,11 @@ const ClassesPage = () => {
                       className="classes_img1"
                       src={images.violin_classes_girl_playing}
                       alt="Back Image"
-                      onMouseEnter={handleMouseEnter(
-                        audioViolin,
-                        setViolinFlipped
-                      )}
-                      onMouseLeave={handleMouseLeave(
-                        audioViolin,
-                        setViolinFlipped
-                      )}
-                      onClick={handleClick(
-                        audioViolin,
-                        isViolinFlipped,
-                        setViolinFlipped
-                      )}
+                      onMouseEnter={handleMouseEnter(setViolinFlipped)}
+                      onMouseLeave={handleMouseLeave(setViolinFlipped)}
+                      onClick={handleClick(isViolinFlipped, setViolinFlipped)}
                     />
-                    <div className="play_pause_container">
-                      <button
-                        className="play_pause"
-                        onClick={handlePlayPause(
-                          audioViolin,
-                          isViolinPlaying,
-                          setViolinPlaying
-                        )}
-                      >
-                        <i
-                          className={`fas ${
-                            isViolinPlaying ? "fa-pause" : "fa-play"
-                          }`}
-                        ></i>
-                      </button>
-                    </div>
+
                     <div className="button_classes_flip_card">
                       <button
                         onClick={() =>
@@ -329,19 +229,9 @@ const ClassesPage = () => {
                       className="classes_img"
                       src={images.violaclasses}
                       alt="Front Image"
-                      onMouseEnter={handleMouseEnter(
-                        audioViolin,
-                        setViolinFlipped
-                      )}
-                      onMouseLeave={handleMouseLeave(
-                        audioViolin,
-                        setViolinFlipped
-                      )}
-                      onClick={handleClick(
-                        audioViolin,
-                        isViolinFlipped,
-                        setViolinFlipped
-                      )}
+                      onMouseEnter={handleMouseEnter(setViolinFlipped)}
+                      onMouseLeave={handleMouseLeave(setViolinFlipped)}
+                      onClick={handleClick(isViolinFlipped, setViolinFlipped)}
                     />
                   </div>
                   <div className="flip_card_back">
@@ -352,36 +242,11 @@ const ClassesPage = () => {
                       className="classes_img1"
                       src={images.violin_classes_girl_playing}
                       alt="Back Image"
-                      onMouseEnter={handleMouseEnter(
-                        audioViolin,
-                        setViolinFlipped
-                      )}
-                      onMouseLeave={handleMouseLeave(
-                        audioViolin,
-                        setViolinFlipped
-                      )}
-                      onClick={handleClick(
-                        audioViolin,
-                        isViolinFlipped,
-                        setViolinFlipped
-                      )}
+                      onMouseEnter={handleMouseEnter(setViolinFlipped)}
+                      onMouseLeave={handleMouseLeave(setViolinFlipped)}
+                      onClick={handleClick(isViolinFlipped, setViolinFlipped)}
                     />
-                    <div className="play_pause_container">
-                      <button
-                        className="play_pause"
-                        onClick={handlePlayPause(
-                          audioPiano,
-                          isPianoPlaying,
-                          setPianoPlaying
-                        )}
-                      >
-                        <i
-                          className={`fas ${
-                            isPianoPlaying ? "fa-pause" : "fa-play"
-                          }`}
-                        ></i>
-                      </button>
-                    </div>
+
                     <div className="button_classes_flip_card">
                       <button
                         onClick={() =>
@@ -424,27 +289,12 @@ const ClassesPage = () => {
                     </div>
                     <img
                       className="classes_img1"
-                      src={images.bg_10}
+                      src={images.bg_ukulele}
                       alt="Back Image"
                       onMouseEnter={handleMouseEnter}
                       onMouseLeave={handleMouseLeave}
                     />
-                    <div className="play_pause_container">
-                      <button
-                        className="play_pause"
-                        onClick={handlePlayPause(
-                          audioPiano,
-                          isPianoPlaying,
-                          setPianoPlaying
-                        )}
-                      >
-                        <i
-                          className={`fas ${
-                            isPianoPlaying ? "fa-pause" : "fa-play"
-                          }`}
-                        ></i>
-                      </button>
-                    </div>
+
                     <div className="button_classes_flip_card">
                       <button
                         onClick={() =>
@@ -492,22 +342,7 @@ const ClassesPage = () => {
                       onMouseEnter={handleMouseEnter}
                       onMouseLeave={handleMouseLeave}
                     />
-                    <div className="play_pause_container">
-                      <button
-                        className="play_pause"
-                        onClick={handlePlayPause(
-                          audioPiano,
-                          isPianoPlaying,
-                          setPianoPlaying
-                        )}
-                      >
-                        <i
-                          className={`fas ${
-                            isPianoPlaying ? "fa-pause" : "fa-play"
-                          }`}
-                        ></i>
-                      </button>
-                    </div>
+
                     <div className="button_classes_flip_card">
                       <button
                         onClick={() =>
@@ -562,27 +397,12 @@ const ClassesPage = () => {
                     </div>
                     <img
                       className="classes_img1"
-                      src={images.solfej_bg}
+                      src={images.solfej}
                       alt="Back Image"
                       onMouseEnter={handleMouseEnter}
                       onMouseLeave={handleMouseLeave}
                     />
-                    <div className="play_pause_container">
-                      <button
-                        className="play_pause"
-                        onClick={handlePlayPause(
-                          audioPiano,
-                          isPianoPlaying,
-                          setPianoPlaying
-                        )}
-                      >
-                        <i
-                          className={`fas ${
-                            isPianoPlaying ? "fa-pause" : "fa-play"
-                          }`}
-                        ></i>
-                      </button>
-                    </div>
+
                     <div className="button_classes_flip_card">
                       <button
                         onClick={() =>
@@ -635,7 +455,7 @@ const ClassesPage = () => {
                     </div>
                     <img
                       className="classes_img1"
-                      src={images.solfej_bg}
+                      src={images.mix}
                       alt="Back Image"
                       onMouseEnter={handleMouseEnter}
                       onMouseLeave={handleMouseLeave}
@@ -693,7 +513,7 @@ const ClassesPage = () => {
                     </div>
                     <img
                       className="classes_img1"
-                      src={images.solfej_bg}
+                      src={images.online}
                       alt="Back Image"
                       onMouseEnter={handleMouseEnter}
                       onMouseLeave={handleMouseLeave}

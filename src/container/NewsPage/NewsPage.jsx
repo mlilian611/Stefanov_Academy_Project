@@ -112,14 +112,18 @@ const NewsPage = () => {
           </div>
           <div className="news_text">
             <div className="headtext_cormorant_news">
-              <h1 className="subtext_program">Събитие 1</h1>
+              <h1 className="subtext_program events">Заключителен концерт </h1>
             </div>
             <p className="text_news">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-              interdum cursus leo, ac rutrum enim vulputate sit amet. Praesent
-              fringilla sem diam, eget scelerisque quam vehicula sit amet. Nulla
-              nec erat eu diam tempor cursus. Donec tincidunt lobortis felis, in
-              mattis urna efficitur at.
+              Присъединете се към един незабравим “Заключителен концерт за
+              учебната 2023/2024 година”, за да станете свидетели на нашите
+              уникални малки музикални таланти! 🎶 Учениците ни ще изпълнят
+              произведения на пиано, цигулка, виолончело и укулеле,
+              отпразнувайки тяхната усърдна работа и постоянство. 🌟 В края на
+              концерта всеки ще получи диплома за успешно завършена година, а
+              тези, които надскочиха себе си, ще бъдат поущрени и със специални
+              призове. 🏅🎻 Нека отпразнуваме заедно една музикална година на
+              развитие и успех!
             </p>
           </div>
         </div>
@@ -144,14 +148,14 @@ const NewsPage = () => {
           </div>
           <div className="news_text">
             <div className="headtext_cormorant_news">
-              <h1 className="subtext_program">Събитие 2</h1>
+              <h1 className="subtext_program events">Чайковски напролет</h1>
             </div>
             <p className="text_news">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-              interdum cursus leo, ac rutrum enim vulputate sit amet. Praesent
-              fringilla sem diam, eget scelerisque quam vehicula sit amet. Nulla
-              nec erat eu diam tempor cursus. Donec tincidunt lobortis felis, in
-              mattis urna efficitur at.
+              Деца пианисти творят „приказка“ по музиката на Чайковски в София и
+              Виена. Повече може да прочетете в тази{" "}
+              <a href="https://kulturni-novini.info/sections/31/news/36924-detsa-pianisti-tvoryat-prikazka-po-muzikata-na-chaykovski-v-sofiya-i-viena">
+                <u>статия</u>
+              </a>
             </p>
           </div>
         </div>
@@ -183,14 +187,16 @@ const NewsPage = () => {
           </div>
           <div className="news_text">
             <div className="headtext_cormorant_news">
-              <h1 className="subtext_program">Събитие 2</h1>
+              <h1 className="subtext_program events">
+                Коледен благотворителен концерт{" "}
+              </h1>
             </div>
             <p className="text_news">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-              interdum cursus leo, ac rutrum enim vulputate sit amet. Praesent
-              fringilla sem diam, eget scelerisque quam vehicula sit amet. Nulla
-              nec erat eu diam tempor cursus. Donec tincidunt lobortis felis, in
-              mattis urna efficitur at.
+              С музика и танци деца помагат на връстници в неравностойно
+              положение.Повече може да прочетете в тази{" "}
+              <a href="https://www.actualno.com/sofia/s-muzika-i-tanci-deca-pomagat-na-vrystnici-v-neravnostojno-polojenie-news_2118229.html">
+                <u>статия</u>
+              </a>
             </p>
           </div>
         </div>

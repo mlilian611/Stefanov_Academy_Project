@@ -108,7 +108,7 @@ const Langclasses = () => {
     <div className="classes_page_section">
       <div id="english" ref={englishRef} className="classes_block">
         <div className="headtext_cormorant_program">
-          <h1 className="headtext_program">Езикови уроци</h1>
+          <h1 className="headtext_program ">Езикови уроци</h1>
           <h3 className="headtext_program_subtext"></h3>
         </div>
         <div className="all">
@@ -116,10 +116,10 @@ const Langclasses = () => {
           <div className="content">
             <div className="flip_card">
               <div className="flip_card_inner">
-                <div className="flip_card_front">
-                  <h1 className="instrument_text">Английски език</h1>
+                <div className="flip_card_front ">
+                  <h1 className="instrument_text ">Английски език</h1>
                   <img
-                    className="classes_img"
+                    className="classes_img lang_img"
                     src={images.english}
                     alt="Front Image"
                   />
@@ -130,7 +130,7 @@ const Langclasses = () => {
                   </div>
                   <div className="flip_card_back_content">
                     <img
-                      className="classes_img1"
+                      className="classes_img1 lang_img"
                       src={images.english}
                       alt="Back Image"
                     />
@@ -175,21 +175,23 @@ const Langclasses = () => {
               <div className="flip_card">
                 <div className="flip_card_inner">
                   <div className="flip_card_front">
-                    <h1 className="instrument_text">Италиански език</h1>
+                    <h1 className="instrument_text lang_img_it">
+                      Италиански език
+                    </h1>
                     <img
-                      className="classes_img"
+                      className="classes_img lang_img"
                       src={images.italian}
                       alt="Front Image"
                     />
                   </div>
                   <div className="flip_card_back">
                     <div className="headtext_cormorant_classes">
-                      <h1 className="subtext_program">
+                      <h1 className="subtext_program lang_img">
                         Уроци по италиански език
                       </h1>
                     </div>
                     <img
-                      className="classes_img1"
+                      className="classes_img1 lang_img"
                       src={images.italian}
                       alt="Back Image"
                     />

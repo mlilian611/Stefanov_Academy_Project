@@ -92,6 +92,8 @@
 
 .app__navbar-smallscreen_links {
   list-style: none;
+  max-height: 600px;
+  overflow-y: auto;
 }
 
 .app__navbar-smallscreen_links li {
@@ -179,8 +181,8 @@
   top: 100%;
   left: 0;
   width: 100%;
-  max-height: 0;
-  overflow: hidden;
+  max-height: 0px;
+  overflow-y: hidden;
   opacity: 0;
   padding: 0;
   margin: 0;
@@ -194,6 +196,7 @@
 .app__navbar-smallscreen_dropdown.show {
   max-height: 300px;
   opacity: 1;
+  overflow-y: auto;
 }
 
 .app__navbar-smallscreen_dropdown li {
@@ -204,6 +207,19 @@
 .app__navbar-smallscreen_dropdown a {
   text-decoration: none;
   color: #d1b0d1;
+}
+
+.app__navbar-smallscreen_dropdown::-webkit-scrollbar {
+  width: 6px;
+}
+
+.app__navbar-smallscreen_dropdown::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3); /* Scrollbar color */
+  border-radius: 4px;
+}
+
+.app__navbar-smallscreen_dropdown::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.1); /* Scrollbar track color */
 }
 
 @media screen and (max-width: 2000px) {
@@ -222,13 +238,22 @@
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (min-width: 330px) and (max-width: 700px) {
   .app__navbar-login {
     display: none;
   }
 
   .app__navbar-logo img {
     width: 110px;
+  }
+  .app__navbar {
+    width: 105%;
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 360px) and (min-height: 740px) and (max-height: 740px) and (-webkit-device-pixel-ratio: 4) {
+  .navbar {
+    width: 115%; /* Specific style for Samsung Galaxy S8+ */
   }
 }
 

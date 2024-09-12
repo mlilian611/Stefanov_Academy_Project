@@ -148,7 +148,6 @@ body {
   width: 110%;
 }
 .subtext_program_solfej {
-  margin-top: 1em;
   font-size: 4em;
   letter-spacing: 0.1em;
 }
@@ -158,7 +157,52 @@ body {
   letter-spacing: 0.2em;
 }
 
-@media screen and (max-width: 900px) {
+/* changed the @media query from to kust  900px to be up to 700px and have seperate one for bigger displays*/
+
+@media screen and (min-width: 710px) and (max-width: 1380px) {
+  .all {
+    grid-template-columns: 1fr; /* Single column layout on smaller screens */
+    grid-gap: 2em;
+    margin-left: 4em;
+  }
+  .flip_card {
+    width: 600px; /* Adjust card size for smaller screens */
+    margin: 5em 0em;
+  }
+
+  .classes_img,
+  .classes_img1 {
+    width: 100%; /* Adjust image size for smaller screens */
+    height: auto;
+  }
+  .instrument_text {
+    font-size: 3em;
+    letter-spacing: 0.1em;
+    margin: 0em 0em 0em 0em;
+  }
+  .instrument_text_solfej {
+    margin-right: 2em;
+    padding-right: 40px;
+    font-size: 3em;
+    letter-spacing: 0.2em;
+  }
+  .subtext_program {
+    font-size: 2.5em;
+    letter-spacing: 0.1em;
+  }
+  .subtext_program_solfej {
+    margin-top: 1em;
+    font-size: 2.5em;
+    letter-spacing: 0.1em;
+  }
+  .button_classes_flip_card button {
+    font-size: 0.9em;
+  }
+  .content {
+    padding-bottom: 0rem;
+  }
+}
+@media screen and (max-width: 700px) {
   .all {
     grid-template-columns: 1fr; /* Single column layout on smaller screens */
     grid-gap: 2em;
@@ -207,7 +251,7 @@ body {
     letter-spacing: 0.1em;
   }
   .subtext_program_solfej {
-    margin-top: 1em;
+    margin-top: 0em;
     font-size: 2.5em;
     letter-spacing: 0.1em;
   }

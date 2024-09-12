@@ -50,7 +50,34 @@
   margin-top: 0.5em;
   font-family: var(--font-alt);
 }
-@media screen and (max-width: 650px) {
+
+/*changed the res into two queries for bigger screens*/
+
+@media screen and (min-width: 810px) and (max-width: 1374px) {
+  .headtext_cormorant_scholarship {
+    text-align: center;
+  }
+  .headtext_scholarship {
+    font-size: 2em;
+    padding: 35px;
+    letter-spacing: 13px;
+  }
+  .scholarship__block {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .scholarship__text {
+    margin: 4em 0em 10em 0em;
+    padding: 0em 0em 1em 0em;
+    width: 100%;
+    font-size: 27px;
+  }
+  .sign_up_scholarship {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 800px) {
   .headtext_cormorant_scholarship {
     text-align: center;
   }

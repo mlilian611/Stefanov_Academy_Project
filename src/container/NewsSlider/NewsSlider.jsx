@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "./NewsSlider.css";
 import { images } from "../../constants";
+import { Link } from "react-router-dom";
 
 const NewsSlider = () => {
   let imgsContainers;
@@ -86,43 +87,28 @@ const NewsSlider = () => {
     <div id="container">
       <div id="inner_container">
         <div id="imgs_container">
-          <div className="img_container">
-            <img src={images.news} alt="" />
+          <div className="img_container image_1">
+            <img src={images.jconcert} alt="" />
             <div className="img_text_overlay">
-              <h1 className="news_title_image">Lore ipsum</h1>
-              <h2 className="news_text">
-                Lorem isum dolor sit amet, consectetur adipiscing elit. Duis
-                interdum cursus leo, ac rutrum enim vulputate sit amet. Praesent
-                fringilla sem
-              </h2>
-              <h3 className="news_date">22.06.2023 </h3>
-              <button className="learn_more">Научи повече</button>
+              <button className="learn_more_news">
+                <a href="/newspage">Научи повече</a>
+              </button>
             </div>
           </div>
           <div className="img_container">
-            <img src={images.news2} alt="" />
+            <img src={images.tchaikoivski} alt="" />
             <div className="img_text_overlay">
-              <h1 className="news_title_image">Lore ipsum</h1>
-              <h2 className="news_text">
-                Lorem isum dolor sit amet, consectetur adipiscing elit. Duis
-                interdum cursus leo, ac rutrum enim vulputate sit amet. Praesent
-                fringilla sem
-              </h2>
-              <h3 className="news_date">22.06.2023 </h3>
-              <button className="learn_more">Научи повече</button>
+              <button className="learn_more_news">
+                <a href="/newspage">Научи повече</a>
+              </button>
             </div>
           </div>
           <div className="img_container">
-            <img src={images.news3} alt="" />
+            <img src={images.dconcert} alt="" />
             <div className="img_text_overlay">
-              <h1 className="news_title_image">Lore ipsum</h1>
-              <h2 className="news_text">
-                Lorem isum dolor sit amet, consectetur adipiscing elit. Duis
-                interdum cursus leo, ac rutrum enim vulputate sit amet. Praesent
-                fringilla sem
-              </h2>
-              <h3 className="news_date">22.06.2023 </h3>
-              <button className="learn_more">Научи повече</button>
+              <button className="learn_more_news">
+                <a href="/newspage">Научи повече</a>
+              </button>
             </div>
           </div>
         </div>

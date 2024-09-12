@@ -274,7 +274,12 @@ button:hover {
     0 0 10px 4px rgb(229, 215, 238);
 }
 
-@media screen and (min-width: 901px) and (max-width: 1370px) {
+@media screen and (min-width: 801px) and (max-width: 1370px) {
+  .headtext_cormorant_about_us {
+    letter-spacing: em;
+    padding: 150px 0 150px 0px;
+    font-size: 3.5em;
+  }
   .card {
     width: 600px;
     height: 600px;
@@ -290,9 +295,9 @@ button:hover {
   }
 }
 
-@media screen and (min-width: 330px) and (max-width: 900px) {
+@media screen and (min-width: 330px) and (max-width: 800px) {
   .headtext_cormorant_about_us {
-    letter-spacing: 0.2em;
+    letter-spacing: 0.1em;
     padding: 150px 0 150px 0px;
     font-size: 2.5em;
   }

@@ -63,6 +63,10 @@
   margin-bottom: 1rem;
 }
 
+.p__opensans.email {
+  text-transform: none;
+}
+
 .p__opensans_quote {
   font-family: var(--font-alt);
   color: var(--color-white);

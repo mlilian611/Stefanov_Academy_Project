@@ -78,7 +78,11 @@ const Navbar = () => {
         />
 
         {toggleMenu && (
-          <div className="app__navbar-smallscreen_overlay flex__center slide-bottom">
+          <div
+            className={`app__navbar-smallscreen_overlay flex__center slide-bottom ${
+              showDropdown ? "scrollable" : ""
+            }`}
+          >
             <FaTimes
               fontSize={29}
               className="overlay__close"
@@ -130,7 +134,6 @@ const Navbar = () => {
                   </ul>
                 </div>
               </li>
-
               <li className="p__opensans">
                 <Link
                   to="/scholarshippage"

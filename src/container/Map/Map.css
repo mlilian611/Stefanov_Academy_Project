@@ -20,23 +20,42 @@
   margin: 0em 10em 1em 1em;
 }
 
-@media screen and (max-width: 650px) {
+/*added new media query for larger screens*/
+
+@media only screen and (min-width: 760px) and (max-width: 1366px) {
+  .map_container {
+    margin: 3em 1em 11em 1em;
+    padding: 0em 0em 0em 4em;
+  }
+  .map_wrapper {
+    width: 50%;
+    height: 80%;
+  }
+  .address {
+    margin: 0em 1em 1em 0em;
+  }
+}
+
+@media screen and (max-width: 700px) {
   .map_container {
     flex-direction: column;
     width: 130%;
-    gap: 10px;
-    margin: 2em 7em 28em 0em;
+    gap: 18em;
+    margin: 0em 7em 26em 0em;
+    z-index: 0;
   }
   .address {
     text-align: center;
     justify-content: center;
     display: flex;
-    margin: 21em 0em 2em 0em;
+    margin: 10em 0em 2em 0em;
     font-size: 1.3em;
   }
   .map_wrapper {
     width: 50%;
-    height: 80%;
+    height: 30%;
+    z-index: 0;
+    position: relative;
   }
 }
 @media only screen and (max-height: 568px) and (orientation: landscape) {

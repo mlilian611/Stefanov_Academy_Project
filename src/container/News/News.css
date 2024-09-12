@@ -42,7 +42,7 @@
   position: absolute;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   width: 100%;
   height: 100%;
@@ -54,20 +54,15 @@
   padding: 25px;
   text-align: center;
   border-radius: 10px;
+  z-index: 10;
 }
-.img_text_overlay h1,
-.img_text_overlay h2,
-.img_text_overlay h3,
-.img_text_overlay button {
-  margin-bottom: 10px;
-}
+
 #overlay {
   position: absolute;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
-  background-color: rgba(200, 200, 200, 0.493);
 }
 
 .overlay_button {
@@ -84,6 +79,7 @@
   color: rgb(185, 155, 155);
   top: 40%;
   cursor: pointer;
+  z-index: 10;
 }
 .news_text {
   width: 70%;
@@ -92,6 +88,14 @@
   font-size: 35px;
   font-weight: lighter;
 }
+.image_1 {
+  position: absolute; /* Keep relative positioning for better control */
+}
+
+.image_1 img {
+  object-fit: cover; /* Ensure the image covers the container */
+  object-position: top; /* Align the top part of the image */
+}
 
 #left_button {
   left: 2%;
@@ -99,6 +103,42 @@
 
 #right_button {
   right: 2%;
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+  .headtext_news_first_page {
+    font-size: 5em;
+    letter-spacing: 7px;
+  }
+
+  #container {
+    width: 100%;
+    height: 500px;
+  }
+  .overlay_button {
+    width: 5%;
+    font-size: 7vw;
+    font-weight: bolder;
+  }
+  .img_text_overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    font-size: 19px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    width: 110%;
+  }
+  .news_text {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+    font-weight: lighter;
+  }
+  .new_section {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 330px) and (max-width: 900px) {

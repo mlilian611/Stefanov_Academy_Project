@@ -89,8 +89,52 @@ h2 {
   transform: translateY(-0.55em);
   box-shadow: 0 0 0.7em 0em #807491;
 }
+.learn_more_news {
+  background-color: #80749125;
+  border: 1px solid #807491;
+}
 
-@media screen and (min-width: 330px) and (max-width: 900px) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+  .classes_button_piano img {
+    width: 179px;
+    height: 179px;
+  }
+
+  .classes_button_violin img {
+    width: 280px;
+    height: 280px;
+  }
+  .classes_button_ukulele img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .classes_button_chello img {
+    width: 240px;
+    height: 240px;
+  }
+  .classes_button_viola img {
+    width: 220px;
+    height: 220px;
+  }
+  .classes_button_solfej img {
+    width: 200px;
+    height: 200px;
+  }
+  .classes_button {
+    width: 200px;
+    height: 200px;
+  }
+  .classes_button {
+    width: 200px;
+    height: 200px;
+  }
+  .classes {
+    width: 100%;
+    margin-left: 0em;
+  }
+}
+@media screen and (min-width: 330px) and (max-width: 1024px) {
   .classes_button_piano img {
     width: 179px;
     height: 179px;

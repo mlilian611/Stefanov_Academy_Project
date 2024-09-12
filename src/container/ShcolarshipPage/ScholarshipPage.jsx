@@ -9,7 +9,7 @@ const ScholarshipPage = () => {
         <div className="scholarship__block">
           <div className="scholarship__text">
             <div className="headtext_cormorant_scholarship">
-              <h1 className="headtext_scholarship">Стипендии</h1>
+              <h1 className="headtext_scholarship">Стипендия</h1>
             </div>
             <p>
               В Stefanov Music House вярваме в подпомагане на младите таланти и
